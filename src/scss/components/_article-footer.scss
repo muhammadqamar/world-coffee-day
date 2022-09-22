@@ -1,0 +1,42 @@
+.article__footer {
+  padding-block: 3rem;
+  border-top: 1px solid var(--black);
+
+  p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+
+    img {
+      height: 5rem;
+      width: auto;
+    }
+  }
+
+  .espa {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    p {
+      font-size: 0.875rem;
+      text-align: center;
+    }
+
+    img {
+      height: 5rem;
+      width: auto;
+    }
+  }
+}

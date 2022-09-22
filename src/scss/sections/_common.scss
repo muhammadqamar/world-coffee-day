@@ -1,0 +1,12 @@
+.article__header,
+.article__footer,
+.section {
+  width: min(80rem, 100%);
+  margin-inline: auto;
+  padding-inline: 3rem;
+  padding-block: var(--section-padding);
+
+  @media screen and (max-width: 1440px) {
+    padding-inline: 1.5rem;
+  }
+}

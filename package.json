@@ -1,0 +1,30 @@
+{
+  "name": "public-anakyklwnw-allazw-syskeuh",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel --no-cache src/index.html",
+    "serve": "http-server -p 1337 dist -c-1",
+    "prestart": "rimraf .parcel-cache dist/*",
+    "prebuild": "rimraf .parcel-cache dist/*",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^4.0.7"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.4.0",
+    "@parcel/transformer-sass": "^2.4.0",
+    "@parcel/transformer-webmanifest": "^2.4.0",
+    "http-server": "^14.1.0",
+    "parcel": "^2.4.0",
+    "posthtml-extend": "^0.6.3",
+    "posthtml-include": "^1.7.2",
+    "posthtml-inline-svg": "^0.2.0",
+    "process": "^0.11.10",
+    "rimraf": "^3.0.2"
+  }
+}

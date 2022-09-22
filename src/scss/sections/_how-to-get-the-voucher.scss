@@ -1,0 +1,58 @@
+@use "../functions" as *;
+
+.section--how-to-get-the-voucher {
+  padding-block: 0;
+  background-color: var(--off-white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .section__header {
+    padding-block: var(--section-padding);
+  }
+
+  .section__title {
+    font-size: fluid-size(24px, 40px, 1440);
+    margin-block: 1rem;
+  }
+
+  .section__description {
+    margin-block: 1rem;
+
+    a {
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline 2px var(--brand);
+      }
+    }
+  }
+
+  .section__notice {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+      height: 9px;
+      width: 100%;
+      bottom: -0.875em;
+      left: 50%;
+      background: url("../images/underline.svg") no-repeat center / 100% auto;
+      transform: translateX(-50%) translateY(-0.5rem);
+    }
+  }
+
+  .section__graphic {
+    align-self: end;
+    justify-self: center;
+    max-width: 80%;
+    width: min(80%, 25rem);
+  }
+}

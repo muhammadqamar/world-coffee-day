@@ -1,0 +1,53 @@
+@use "../functions" as *;
+
+.section--enviromental {
+  text-align: center;
+
+  .section__title {
+    margin-inline: auto;
+    max-width: 45ch;
+    font-size: fluid-size(24px, 40px, 1440);
+    margin-bottom: 1.5em;
+  }
+
+  .section__subtitle {
+    font-size: fluid-size(18px, 32px, 1440);
+    letter-spacing: 0.08em;
+  }
+
+  .enviromental-gains {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  .gain {
+    padding-block: 1rem;
+
+    &__graphic {
+      display: grid;
+      place-content: center;
+      height: 14rem;
+    }
+
+    &__title {
+      font-size: fluid-size(18px, 24px, 1440);
+
+      @media screen and (max-width: 768px) {
+        max-width: 30ch;
+        margin-inline: auto;
+      }
+
+      strong {
+        display: block;
+        font-size: fluid-size(24px, 32px, 1440);
+      }
+    }
+  }
+}

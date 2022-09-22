@@ -1,0 +1,50 @@
+.home_barista__container {
+  max-width: 1446px;
+  margin: 0 auto;
+  text-align: center;
+
+  .h_b_main_heading_img {
+    width: auto;
+    height: auto;
+  }
+
+  .h_b_sub_heading {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin: 0 0 39px;
+  }
+
+  .home_barista_slider_box {
+    .slider_card {
+      width: 456px;
+      border-radius: 16px;
+      box-shadow: 0px 14px 44px rgba(121, 121, 121, 0.16);
+
+      .h_b_card_img {
+        width: 100%;
+        object-fit: cover;
+        height: 296px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+      .h_b_card_cantant {
+        text-align: left;
+        padding: 28px 29px 34px;
+        .main_heading {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 34px;
+          margin: 0 0 11px;
+        }
+        .main_text {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

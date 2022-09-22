@@ -1,0 +1,10 @@
+@use "./colors" as *;
+
+:root,
+#articlePage {
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+  }
+
+  --section-padding: 3rem;
+}

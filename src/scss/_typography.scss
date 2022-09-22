@@ -1,0 +1,29 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap";
+// @import "https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap";
+
+body {
+  font-family: "Zona Pro";
+  // font: 400 1rem / 1.5 "MM Text Pro WebTT";
+  overflow-x: hidden;
+}
+
+h3 {
+  font-family: "Black Diamond";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+svg,
+img {
+  vertical-align: middle;
+  display: inline;
+}
+
+// @for $i from 1 through 6 {
+//   h#{$i} {
+//     font-family: Comfortaa, sans-serif;
+//   }
+// }

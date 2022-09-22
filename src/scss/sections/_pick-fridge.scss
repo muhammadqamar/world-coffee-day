@@ -1,0 +1,73 @@
+@use "../functions" as *;
+
+.section--pick-fridge {
+  .section__title {
+    max-width: 40ch;
+    font-size: fluid-size(24px, 40px, 1440);
+    margin-bottom: 1.5em;
+  }
+
+  .fridgers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .fridger {
+    background: var(--green);
+
+    &:hover {
+      .fridger__graphic img {
+        transform: translateY(-5%);
+      }
+    }
+
+    &:nth-child(2) {
+      .fridger__graphic img {
+        height: 55%;
+      }
+    }
+
+    &__graphic {
+      background-image: url("../images/back-cards.svg");
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: 0% 28px;
+      height: 15rem;
+      display: flex;
+
+      img {
+        margin: auto;
+        width: auto;
+        height: 80%;
+        transition: transform 0.2s ease;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1em;
+      padding: 2rem 2.5rem;
+      background-color: var(--off-white);
+
+      &:hover {
+        .fridger__link-icon {
+          transform: translateX(30%);
+        }
+      }
+
+      &-icon {
+        width: 0.75em;
+        height: auto;
+        transition: transform 0.2s ease;
+      }
+    }
+  }
+}

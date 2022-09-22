@@ -1,0 +1,78 @@
+@use "../functions" as *;
+
+.section--pick-ac {
+  .section__title {
+    max-width: 40ch;
+    font-size: fluid-size(24px, 40px, 1440);
+    margin-bottom: 1.5em;
+  }
+
+  .air-cons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .air-con {
+    background: var(--green);
+
+    &:hover {
+      .air-con__graphic img {
+        transform: translateY(-10%);
+      }
+    }
+
+    &__graphic {
+      background-image: url("../images/back-cards.svg");
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: 0% 28px;
+      height: 15rem;
+      display: flex;
+      padding-inline: 2rem;
+
+      img {
+        margin: auto;
+        width: 300px;
+        height: auto;
+        transition: transform 0.2s ease;
+      }
+    }
+
+    &__for {
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      transform: translateY(-70%);
+      width: auto;
+      height: 3rem;
+    }
+
+    &__link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1em;
+      padding: 2rem 2.5rem;
+      background-color: var(--off-white);
+
+      &:hover {
+        .air-con__link-icon {
+          transform: translateX(30%);
+        }
+      }
+
+      &-icon {
+        width: 0.75em;
+        height: auto;
+        transition: transform 0.2s ease;
+      }
+    }
+  }
+}
