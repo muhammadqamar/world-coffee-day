@@ -939,6 +939,13 @@ svg, img {
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_main_heading {
+    border-top: 4px solid #f15a27;
+    padding-top: 64px;
+  }
+}
+
 .coffee__machine__section .c_m_sub_heading {
   text-align: center;
   letter-spacing: -.01em;
@@ -1046,7 +1053,7 @@ svg, img {
 
 @media (max-width: 768px) {
   .coffee__machine__section .c_m_flex__box .card_box {
-    width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -1127,7 +1134,10 @@ svg, img {
   .coffee__machine__section .c_m_flex__box .card_box .card_bg_img {
     background-position: unset;
     background-image: url("c_machine_img_mob_8.8d4e87b4.svg");
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 245px 18px 18px;
+    display: flex;
   }
 }
 
@@ -1206,14 +1216,42 @@ svg, img {
   padding: 91px 132px 78px;
 }
 
+@media (min-width: 769px) and (max-width: 1399px) {
+  .features__section {
+    padding: 91px 40px 78px;
+  }
+}
+
+@media (max-width: 769px) {
+  .features__section {
+    padding: 91px 24px 78px;
+  }
+}
+
 .features__section .features_main_heading {
-  text-align: center;
-  letter-spacing: -.01em;
-  color: var(--text-color);
-  margin-bottom: 42px;
-  font-size: 68px;
-  font-weight: 400;
-  line-height: 74px;
+  width: auto;
+  height: auto;
+  margin: 0 auto 42px;
+  display: flex;
+}
+
+@media (max-width: 769px) {
+  .features__section .features_main_heading {
+    display: none;
+  }
+}
+
+.features__section .features_main_heading_mob {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .features__section .features_main_heading_mob {
+    width: auto;
+    height: auto;
+    margin: 0 auto 33px;
+    display: flex;
+  }
 }
 
 .features__section .feature_flex_box {
@@ -1222,9 +1260,45 @@ svg, img {
   display: flex;
 }
 
+@media (max-width: 993px) {
+  .features__section .feature_flex_box {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .features__section .feature_flex_box .feature_c_m_img {
   width: 528px;
   height: 472px;
+}
+
+@media (min-width: 1180px) and (max-width: 1250px) {
+  .features__section .feature_flex_box .feature_c_m_img {
+    width: 454px;
+    height: 407px;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1180px) {
+  .features__section .feature_flex_box .feature_c_m_img {
+    width: 354px;
+    height: 317px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1080px) {
+  .features__section .feature_flex_box .feature_c_m_img {
+    width: 248px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 993px) {
+  .features__section .feature_flex_box .feature_c_m_img {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 .features__section .feature_flex_box .feature_map_img {
@@ -1233,11 +1307,25 @@ svg, img {
   margin: 45px 0 0 -85px;
 }
 
+@media (max-width: 993px) {
+  .features__section .feature_flex_box .feature_map_img {
+    display: none;
+  }
+}
+
 .features__section .feature_flex_box .feature_content {
   flex-direction: column;
   gap: 24px;
   margin-top: 35px;
   display: flex;
+}
+
+@media (max-width: 992px) {
+  .features__section .feature_flex_box .feature_content {
+    gap: 26px;
+    margin-top: 49px;
+    margin-left: 20px;
+  }
 }
 
 .features__section .feature_flex_box .feature_content .feature_about_box .f_a_heading {
@@ -1248,11 +1336,51 @@ svg, img {
   line-height: 40px;
 }
 
+@media (max-width: 992px) {
+  .features__section .feature_flex_box .feature_content .feature_about_box .f_a_heading {
+    position: relative;
+  }
+
+  .features__section .feature_flex_box .feature_content .feature_about_box .f_a_heading:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #f15a25;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    left: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features__section .feature_flex_box .feature_content .feature_about_box .f_a_heading {
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+  }
+
+  .features__section .feature_flex_box .feature_content .feature_about_box .f_a_heading:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: #f15a25;
+    position: absolute;
+  }
+}
+
 .features__section .feature_flex_box .feature_content .feature_about_box .f_a_text {
   color: var(--black);
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+}
+
+@media (max-width: 768px) {
+  .features__section .feature_flex_box .feature_content .feature_about_box .f_a_text {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .home_barista__container {
@@ -1266,6 +1394,13 @@ svg, img {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .home_barista__container .h_b_main_heading_img {
+    border-top: 4px solid #f15a27;
+    padding-top: 64px;
+  }
+}
+
 .home_barista__container .h_b_sub_heading {
   text-align: center;
   letter-spacing: .01em;
@@ -1275,10 +1410,37 @@ svg, img {
   line-height: 80px;
 }
 
+@media (max-width: 768px) {
+  .home_barista__container .h_b_sub_heading {
+    margin: 0 0 40px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.home_barista__container .home_barista_slider_box {
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .home_barista__container .home_barista_slider_box {
+    display: none;
+  }
+}
+
 .home_barista__container .home_barista_slider_box .slider_card {
   width: 456px;
   border-radius: 16px;
   box-shadow: 0 14px 44px #79797929;
+}
+
+@media (max-width: 768px) {
+  .home_barista__container .home_barista_slider_box .slider_card {
+    width: 100%;
+  }
 }
 
 .home_barista__container .home_barista_slider_box .slider_card .h_b_card_img {
@@ -1294,11 +1456,25 @@ svg, img {
   padding: 28px 29px 34px;
 }
 
+@media (max-width: 768px) {
+  .home_barista__container .home_barista_slider_box .slider_card .h_b_card_cantant {
+    padding: 18px 30px 34px 26px 24px;
+  }
+}
+
 .home_barista__container .home_barista_slider_box .slider_card .h_b_card_cantant .main_heading {
   margin: 0 0 11px;
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
+}
+
+@media (max-width: 768px) {
+  .home_barista__container .home_barista_slider_box .slider_card .h_b_card_cantant .main_heading {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .home_barista__container .home_barista_slider_box .slider_card .h_b_card_cantant .main_text {
@@ -1307,17 +1483,32 @@ svg, img {
   line-height: 28px;
 }
 
+@media (max-width: 768px) {
+  .home_barista__container .home_barista_slider_box .slider_card .h_b_card_cantant .main_text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
 .books_dedicated_section {
   max-width: 1446px;
   text-align: center;
   margin: 0 auto;
   padding: 82px 20px 0;
+  overflow: hidden;
 }
 
 .books_dedicated_section .heading_img {
   max-width: 641px;
   margin: 0 auto 47px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .books_dedicated_section .heading_img {
+    border-top: 4px solid #f15a27;
+    padding-top: 64px;
+  }
 }
 
 .books_dedicated_section .heading_img .book_heading_img {
@@ -1331,9 +1522,16 @@ svg, img {
   height: 4px;
   z-index: -1;
   background: linear-gradient(90deg, #f15a27 38%, #09097900 38%);
+  display: block;
   position: absolute;
   top: 50%;
   left: -280px;
+}
+
+@media (max-width: 768px) {
+  .books_dedicated_section .heading_img:before {
+    display: none;
+  }
 }
 
 .books_dedicated_section .heading_img:after {
@@ -1342,9 +1540,16 @@ svg, img {
   height: 4px;
   z-index: -1;
   background: linear-gradient(90deg, #09097900 62%, #f15a27 38%);
+  display: block;
   position: absolute;
   top: 50%;
   right: -280px;
+}
+
+@media (max-width: 768px) {
+  .books_dedicated_section .heading_img:after {
+    display: none;
+  }
 }
 
 .books_dedicated_section .books_cards_box {
@@ -1352,6 +1557,12 @@ svg, img {
   align-items: center;
   gap: 13px;
   display: flex;
+}
+
+@media (min-width: 1150px) and (max-width: 1441px) {
+  .books_dedicated_section .books_cards_box {
+    justify-content: space-between;
+  }
 }
 
 .books_dedicated_section .books_cards_box .book_card {
@@ -1363,10 +1574,51 @@ svg, img {
   position: relative;
 }
 
+@media (max-width: 992px) {
+  .books_dedicated_section .books_cards_box .book_card {
+    width: 100%;
+    padding: 37px 18px 24px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1441px) {
+  .books_dedicated_section .books_cards_box .book_card {
+    width: 440px;
+  }
+}
+
+@media (min-width: 1350px) and (max-width: 1440px) {
+  .books_dedicated_section .books_cards_box .book_card {
+    width: 425px;
+    padding: 37px 16.5px 30px;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1350px) {
+  .books_dedicated_section .books_cards_box .book_card {
+    width: 390px;
+    padding: 37px 16.5px 30px;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1250px) {
+  .books_dedicated_section .books_cards_box .book_card {
+    width: 361px;
+    padding: 37px 16.5px 30px;
+  }
+}
+
 .books_dedicated_section .books_cards_box .book_card:last-child {
   width: 100%;
   height: 422px;
   padding: 61px 80px 66px;
+}
+
+@media (max-width: 992px) {
+  .books_dedicated_section .books_cards_box .book_card:last-child {
+    height: 631px;
+    padding: 23px 15px 23px 24px;
+  }
 }
 
 .books_dedicated_section .books_cards_box .book_card .b_c_bg_img {
@@ -1377,10 +1629,46 @@ svg, img {
   right: 0;
 }
 
+.books_dedicated_section .books_cards_box .book_card .b_c_bg_img-4 {
+  width: auto;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 992px) {
+  .books_dedicated_section .books_cards_box .book_card .b_c_bg_img-4 {
+    display: none;
+  }
+}
+
+.books_dedicated_section .books_cards_box .book_card .b_c_bg_img-mob {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .books_dedicated_section .books_cards_box .book_card .b_c_bg_img-mob {
+    width: 100%;
+    height: 631px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
 .books_dedicated_section .books_cards_box .book_card .card_main_contant_5 {
   text-align: left;
   width: 507px;
   position: relative;
+}
+
+@media (max-width: 992px) {
+  .books_dedicated_section .books_cards_box .book_card .card_main_contant_5 {
+    width: 100%;
+  }
 }
 
 .books_dedicated_section .books_cards_box .book_card .card_main_contant_5 .book_headig_5 {
@@ -1391,6 +1679,14 @@ svg, img {
   line-height: 50px;
 }
 
+@media (max-width: 768px) {
+  .books_dedicated_section .books_cards_box .book_card .card_main_contant_5 .book_headig_5 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
 .books_dedicated_section .books_cards_box .book_card .card_main_contant_5 .book_price_5 {
   letter-spacing: .01em;
   color: var(--black);
@@ -1398,6 +1694,14 @@ svg, img {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
+}
+
+@media (max-width: 768px) {
+  .books_dedicated_section .books_cards_box .book_card .card_main_contant_5 .book_price_5 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 38px;
+  }
 }
 
 .books_dedicated_section .books_cards_box .book_card .card_main_contant_5 a button {
@@ -1432,10 +1736,25 @@ svg, img {
   line-height: 44px;
 }
 
+@media (max-width: 768px) {
+  .books_dedicated_section .books_cards_box .book_card .card_main_contant .boox_about .book_headig {
+    margin: 0 0 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .books_dedicated_section .books_cards_box .book_card .card_main_contant .boox_about .book_buy {
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .books_dedicated_section .books_cards_box .book_card .card_main_contant .boox_about .book_buy {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .books_dedicated_section .books_cards_box .book_card .card_main_contant .boox_about .book_buy .book_price {
@@ -1443,6 +1762,14 @@ svg, img {
   font-size: 30px;
   font-weight: 600;
   line-height: 28px;
+}
+
+@media (max-width: 768px) {
+  .books_dedicated_section .books_cards_box .book_card .card_main_contant .boox_about .book_buy .book_price {
+    margin-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .books_dedicated_section .books_cards_box .book_card .card_main_contant .boox_about .book_buy a button {
@@ -1456,6 +1783,12 @@ svg, img {
   padding: 0 20px;
 }
 
+@media (max-width: 992px) {
+  .spotify_music_section {
+    height: 808px;
+  }
+}
+
 .spotify_music_section .spotify_bg_color {
   width: 100%;
   background-color: var(--white);
@@ -1466,9 +1799,31 @@ svg, img {
 .spotify_music_section .spotify_bg_color .spotify_bg_img {
   width: auto;
   height: auto;
+  display: block;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+}
+
+@media (max-width: 992px) {
+  .spotify_music_section .spotify_bg_color .spotify_bg_img {
+    display: none;
+  }
+}
+
+.spotify_music_section .spotify_bg_color .spotify_bg_img_mob {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .spotify_music_section .spotify_bg_color .spotify_bg_img_mob {
+    width: -webkit-fill-available;
+    height: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .spotify_music_section .spotify_bg_color .spotify_music_section {
@@ -1480,6 +1835,26 @@ svg, img {
   width: 482px;
   margin: 0 178px 0 auto;
   padding-top: 68px;
+}
+
+@media (min-width: 1199px) and (max-width: 1350px) {
+  .spotify_music_section .spotify_bg_color .spotify_music_section .spotify_about {
+    margin: 0 50px 0 auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1190px) {
+  .spotify_music_section .spotify_bg_color .spotify_music_section .spotify_about {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .spotify_music_section .spotify_bg_color .spotify_music_section .spotify_about {
+    width: 100%;
+    margin: 0;
+    padding: 37px 36px;
+  }
 }
 
 .spotify_music_section .spotify_bg_color .spotify_music_section .spotify_about .spotify-img {
@@ -1500,52 +1875,99 @@ svg, img {
   background-color: #9edbcb;
 }
 
-.coffee_good_section {
-  max-width: 1446px;
-  height: auto;
-  margin: 0 auto 18px;
+.spacing_coffee {
   padding: 0 20px;
 }
 
-.coffee_good_section .spotify_music_section {
-  width: 100%;
-  height: 416px;
+.spacing_coffee .coffee_good_section {
+  max-width: 1406px;
+  height: auto;
   background-image: url("coffee-good-bg-img.073b4882.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 34px 46px 61px;
+  background-size: cover;
+  border-radius: 8.55px;
+  margin: 0 auto 18px;
 }
 
-.coffee_good_section .spotify_music_section .spotify_about .heading_box {
+@media (max-width: 992px) {
+  .spacing_coffee .coffee_good_section {
+    height: 1009px;
+    background-image: url("coffee-good-bg-img-mob.2c642a00.png");
+  }
+}
+
+.spacing_coffee .coffee_good_section .spotify_about {
+  padding: 34px 500px 61px 46px;
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
+  .spacing_coffee .coffee_good_section .spotify_about {
+    padding: 34px 250px 61px 46px;
+  }
+}
+
+@media (max-width: 992px) {
+  .spacing_coffee .coffee_good_section .spotify_about {
+    padding: 18px;
+  }
+}
+
+.spacing_coffee .coffee_good_section .spotify_about .heading_box {
   align-items: center;
   margin-bottom: 21px;
   display: flex;
 }
 
-.coffee_good_section .spotify_music_section .spotify_about .heading_box .coffee_heading {
+@media (max-width: 992px) {
+  .spacing_coffee .coffee_good_section .spotify_about .heading_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.spacing_coffee .coffee_good_section .spotify_about .heading_box .coffee_heading {
   letter-spacing: -.01em;
   color: var(--white);
+  white-space: pre;
   margin: 0;
   font-size: 40px;
   font-weight: 800;
   line-height: 56px;
 }
 
-.coffee_good_section .spotify_music_section .spotify_about .coffee_lists {
+@media (max-width: 768px) {
+  .spacing_coffee .coffee_good_section .spotify_about .heading_box .coffee_heading {
+    font-size: 32px;
+    line-height: 56px;
+  }
+}
+
+.spacing_coffee .coffee_good_section .spotify_about .coffee_lists {
   align-self: center;
   gap: 45px;
   display: flex;
 }
 
-.coffee_good_section .spotify_music_section .spotify_about .coffee_lists .list ul li {
+@media (max-width: 992px) {
+  .spacing_coffee .coffee_good_section .spotify_about .coffee_lists {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+
+.spacing_coffee .coffee_good_section .spotify_about .coffee_lists .list ul {
+  margin: 0;
+}
+
+.spacing_coffee .coffee_good_section .spotify_about .coffee_lists .list ul li {
   max-width: 352px;
   margin-bottom: 33px;
   list-style: none;
   position: relative;
 }
 
-.coffee_good_section .spotify_music_section .spotify_about .coffee_lists .list ul li:before {
+.spacing_coffee .coffee_good_section .spotify_about .coffee_lists .list ul li:before {
   content: " ";
   width: 25px;
   height: 17px;
@@ -1558,7 +1980,7 @@ svg, img {
   left: -40px;
 }
 
-.coffee_good_section .spotify_music_section .spotify_about .coffee_lists .list ul li .list_text {
+.spacing_coffee .coffee_good_section .spotify_about .coffee_lists .list ul li .list_text {
   color: var(--white);
   font-size: 24px;
   font-weight: 400;
@@ -1875,6 +2297,15 @@ svg, img {
   line-height: 48px;
   transition: background-color .2s, color .2s;
   display: inline-flex;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    min-height: 30px;
+    padding: 8px 14px;
+    font-size: 14px;
+    line-height: 23px;
+  }
 }
 
 .btn img {
@@ -2204,14 +2635,330 @@ a {
 </section>
 
 
-      <!-- <include src="sections/taskpage/profit.html"></include>
-      <include src="sections/taskpage/smartphone.html"></include>
+      <section class="features__section">
+  <img src="/feature-heading.e82981cd.svg" alt="" class="features_main_heading">
+  <img src="/feature-heading-mob.67004086.svg" alt="" class="features_main_heading_mob">
+  <div class="feature_flex_box">
+    <img src="/feature_c_m_img.f6aaacf6.svg" alt="" class="feature_c_m_img">
+    <img src="/feature_map_img.2a94054d.svg" alt="" class="feature_map_img">
+    <div class="feature_content">
+      <!-- 1 -->
+      <div class="feature_about_box">
+        <h6 class="f_a_heading">Σωστό άλεσμα</h6>
+        <p class="f_a_text">
+          Τίποτα δεν συγκρίνεται με τον φρεσκοκομμένο καφέ από ολόκληρους καβουρδισμένους κόκκους!
+        </p>
+      </div>
+      <!-- 2 -->
+      <div class="feature_about_box">
+        <h6 class="f_a_heading">Καθαρά φίλτρα</h6>
+        <p class="f_a_text">
+          Σχολαστικό καθάρισμα με το ειδικό βουρτσάκι καθαρισμού της «σίτας», που θα κάνει κάθε καφέ
+          σαν τον πρώτο!
+        </p>
+      </div>
+      <!-- 3 -->
+      <div class="feature_about_box">
+        <h6 class="f_a_heading">Καθαρό νερό</h6>
+        <p class="f_a_text">
+          Με ενσωματωμένο φίλτρο ενεργού άνθρακα απαλλάσσεσαι από το χλώριο και η γεύση του καφέ σου
+          δεν είναι πια διαπραγματεύσιμη!
+        </p>
+      </div>
+      <!-- 4 -->
+      <div class="feature_about_box">
+        <h6 class="f_a_heading">Τακτική αφαλάτωση</h6>
+        <p class="f_a_text">
+          Ειδικά προϊόντα αφαλάτωσης - ή λίγο ξύδι αν συμφωνεί και ο κατασκευαστής - διατηρούν την
+          καφετιέρα σου καθαρή και λειτουργική για περισσότερο καιρό!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <include src="sections/taskpage/loveEarth.html"></include>
+      <section class="home_barista__container section--love-earth">
+  <img src="/home-barista-heading-img.895602cc.svg" alt="" class="h_b_main_heading_img">
+  <h1 class="h_b_sub_heading">για να γίνεις Home Barista!</h1>
 
-      <include src="sections/taskpage/spotifyMusic.html"></include>
-      <include src="sections/taskpage/coffeeIsGood.html"></include>
-      <include src="sections/taskpage/publicNow.html"></include> -->
+  <div class="home_barista_slider_box">
+    <div class="slider_card">
+      <img src="/slider-card-img.dd715f68.svg" alt="" class="h_b_card_img">
+      <div class="h_b_card_cantant">
+        <h6 class="main_heading">Ανακάλυψε Χρήσιμα Tips & γίνε HOME Barista!</h6>
+        <p class="main_text">Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!</p>
+      </div>
+    </div>
+
+    <div class="slider_card">
+      <img src="/slider-card-img.dd715f68.svg" alt="" class="h_b_card_img">
+      <div class="h_b_card_cantant">
+        <h6 class="main_heading">Ανακάλυψε Χρήσιμα Tips & γίνε HOME Barista!</h6>
+        <p class="main_text">Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!</p>
+      </div>
+    </div>
+
+    <div class="slider_card">
+      <img src="/slider-card-img.dd715f68.svg" alt="" class="h_b_card_img">
+      <div class="h_b_card_cantant">
+        <h6 class="main_heading">Ανακάλυψε Χρήσιμα Tips & γίνε HOME Barista!</h6>
+        <p class="main_text">Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!</p>
+      </div>
+    </div>
+
+    <div class="slider_card">
+      <img src="/slider-card-img.dd715f68.svg" alt="" class="h_b_card_img">
+      <div class="h_b_card_cantant">
+        <h6 class="main_heading">Ανακάλυψε Χρήσιμα Tips & γίνε HOME Barista!</h6>
+        <p class="main_text">Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!</p>
+      </div>
+    </div>
+
+    <div class="slider_card">
+      <img src="/slider-card-img.dd715f68.svg" alt="" class="h_b_card_img">
+      <div class="h_b_card_cantant">
+        <h6 class="main_heading">Ανακάλυψε Χρήσιμα Tips & γίνε HOME Barista!</h6>
+        <p class="main_text">Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------------------------- -->
+
+  <!-- <div class="section__content splide love-earth-slider" aria-label="love-earth">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide love-earth-slider__item love-earth-card">
+          <div class="love-earth-card__image-wrapper">
+            <img
+              src="./images/taskPage/slider-card-img.svg"
+              alt=""
+              role="presentation"
+              class="love-earth-card__image"
+            />
+          </div>
+          <h3 class="love-earth-card__title">Just go Zero</h3>
+          <p class="love-earth-card__description">
+            Μετατρέπουμε το flagship κατάστημά μας στο Σύνταγμα στο πρώτο zero-waste κατάστημα στη
+            χώρα και προσκαλούμε να ακολουθήσουν όλοι αυτήν την πρακτική.
+          </p>
+        </li>
+        <li class="splide__slide love-earth-slider__item love-earth-card">
+          <div class="love-earth-card__image-wrapper">
+            <img
+              src="./images/taskPage/slider-card-img.svg"
+              alt=""
+              role="presentation"
+              class="love-earth-card__image"
+            />
+          </div>
+          <h3 class="love-earth-card__title">Ανακύκλωση Συσκευών</h3>
+          <p class="love-earth-card__description">
+            Υλοποιούμε ένα από τα μεγαλύτερα προγράμματα ανακύκλωσης ηλεκτρονικών &amp; ηλεκτρικών
+            συσκευών.
+          </p>
+        </li>
+        <li class="splide__slide love-earth-slider__item love-earth-card">
+          <div class="love-earth-card__image-wrapper">
+            <img
+              src="./images/taskPage/slider-card-img.svg"
+              alt=""
+              role="presentation"
+              class="love-earth-card__image"
+            />
+          </div>
+          <h3 class="love-earth-card__title">Πράσινες Συσκευασίες</h3>
+          <p class="love-earth-card__description">
+            Αλλάζουμε τις συσκευασίες μας με φιλικές προς το περιβάλλον λύσεις και διαθέτουμε στους
+            πελάτες μας συσκευασίες πολλαπλών χρήσεων.
+          </p>
+        </li>
+        <li class="splide__slide love-earth-slider__item love-earth-card">
+          <div class="love-earth-card__image-wrapper">
+            <img
+              src="./images/taskPage/slider-card-img.svg"
+              alt=""
+              role="presentation"
+              class="love-earth-card__image"
+            />
+          </div>
+          <h3 class="love-earth-card__title">Πράσινη ενέργεια</h3>
+          <p class="love-earth-card__description">
+            Μεταβαίνουμε στη χρήση πράσινης ενέργειας και μειώνουμε την κατανάλωση.
+          </p>
+        </li>
+        <li class="splide__slide love-earth-slider__item love-earth-card">
+          <div class="love-earth-card__image-wrapper">
+            <img
+              src="./images/taskPage/slider-card-img.svg"
+              alt=""
+              role="presentation"
+              class="love-earth-card__image"
+            />
+          </div>
+          <h3 class="love-earth-card__title">Δεύτερη ζωή σε προϊόντα</h3>
+          <p class="love-earth-card__description">
+            Δίνουμε δεύτερη ζωή σε προϊόντα και βοηθάμε τους πελάτες μας να αποκτήσουν πράσινες
+            συνήθειες.
+          </p>
+        </li>
+        <li class="splide__slide love-earth-slider__item love-earth-card">
+          <div class="love-earth-card__image-wrapper">
+            <img
+              src="./images/taskPage/slider-card-img.svg"
+              alt=""
+              role="presentation"
+              class="love-earth-card__image"
+            />
+          </div>
+          <h3 class="love-earth-card__title">Μείωση Χαρτιού</h3>
+          <p class="love-earth-card__description">
+            Μειώνουμε τη χρήση χαρτιού στα καταστήματά μας και προσφέρουμε στους πελάτες μας τη
+            δυνατότητα ηλεκτρονικής απόδειξης.
+          </p>
+        </li>
+        <li class="splide__slide love-earth-slider__item love-earth-card">
+          <div class="love-earth-card__image-wrapper">
+            <img
+              src="./images/taskPage/slider-card-img.svg"
+              alt=""
+              role="presentation"
+              class="love-earth-card__image"
+            />
+          </div>
+          <h3 class="love-earth-card__title">Βιώσιμα γραφία και στόλος</h3>
+          <p class="love-earth-card__description">
+            Βιώσιμες εγκαταστάσεις γραφείων και ηλεκτρικός στόλος αυτοκινήτων.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="splide__nav">
+      <div class="splide__arrows"></div>
+      <ul class="splide__pagination"></ul>
+    </div>
+  </div> -->
+</section>
+
+
+      <section class="books_dedicated_section">
+  <div class="heading_img">
+    <img src="/book-main-heading.33981161.svg" alt="" class="book_heading_img">
+  </div>
+  <div class="books_cards_box">
+    <!-- 1 -->
+    <div class="book_card">
+      <img src="/book-card-bg-img.4760f79b.svg" alt="" class="b_c_bg_img">
+      <div class="card_main_contant">
+        <img src="/book-1.261442d9.svg" alt="" class="book_img">
+        <div class="boox_about">
+          <h6 class="book_headig">Τα μυστικά του καφέ</h6>
+          <div class="book_buy">
+            <p class="book_price">17,99€</p>
+            <a href=""><button class="btn">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="book_card">
+      <img src="/book-card-bg-img.4760f79b.svg" alt="" class="b_c_bg_img">
+      <div class="card_main_contant">
+        <img src="/book-2.f5c6f1d0.svg" alt="" class="book_img">
+        <div class="boox_about">
+          <h6 class="book_headig">Πάμε για καφέ...</h6>
+          <div class="book_buy">
+            <p class="book_price">2,23€</p>
+            <a href=""><button class="btn">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="book_card">
+      <img src="/book-card-bg-img.4760f79b.svg" alt="" class="b_c_bg_img">
+      <div class="card_main_contant">
+        <img src="/book-3.e3b3793f.svg" alt="" class="book_img">
+        <div class="boox_about">
+          <h6 class="book_headig">Το εγχειρίδιο του καφέ</h6>
+          <div class="book_buy">
+            <p class="book_price">17,99€</p>
+            <a href=""><button class="btn">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="book_card">
+      <img src="/book-card-4.83c7b8f9.svg" alt="" class="b_c_bg_img-4">
+      <img src="/book-card-4-mob.25ffe378.svg" alt="" class="b_c_bg_img-mob">
+      <div class="card_main_contant_5">
+        <h4 class="book_headig_5">Συνόδεψε τον αγαπημένο σου καφέ με ένα βιβλίο!</h4>
+        <p class="book_price_5">Aνακάλυψε όλες τις νέες κυκλοφορίες!</p>
+        <a href=""><button class="btn">Βρες τα όλα εδώ</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="spotify_music_section">
+  <div class="spotify_bg_color">
+    <img src="/spotify-bg-img.4e05221a.svg" alt="" class="spotify_bg_img">
+    <img src="/spotify-bg-img-mob.c37fa47d.svg" alt="" class="spotify_bg_img_mob">
+
+    <div class="spotify_music_section">
+      <div class="spotify_about">
+        <img src="/spotify-img.ea65c17a.svg" alt="" class="spotify-img">
+        <p class="spotify_text">
+          Βάλαμε τον καφέ, βάλαμε το βιβλίο, βάζουμε για σένα και τη μουσική!
+          <strong> Καλή απόλαυση!</strong>
+        </p>
+        <a href=""><button class="btn">Άκουσε τη λίστα</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="spacing_coffee">
+  <section class="coffee_good_section">
+    <div class="spotify_about">
+      <div class="heading_box">
+        <h1 class="coffee_heading">Και μην ξεχνάς</h1>
+        <img src="/coffee-good-heading-img.1bb6c5b4.svg" alt="" class="c_g_heading_img">
+      </div>
+      <div class="coffee_lists">
+        <div class="list">
+          <ul>
+            <li><p class="list_text">Σου δίνει ενέργεια</p></li>
+            <li><p class="list_text">Συμβάλλει στη μακροζωία</p></li>
+            <li><p class="list_text">Βοηθάει τη λειτουργία του εγκεφάλου</p></li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <li><p class="list_text">Συμβάλλει στη μακροζωία</p></li>
+            <li><p class="list_text">Μπορεί να προστατέψει τη λειτουργία του ήπατος</p></li>
+            <li><p class="list_text">Φαίνεται να μειώνει τον κίνδυνο κατάθλιψης</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+      <section class="public_now_section">
+  <div class="flex_box_imgs">
+    <div class="img_1">
+      <img src="/public-now.c272b2e7.svg" alt="" class="public_img_1">
+    </div>
+    <div class="img_1">
+      <img src="/safetu-net.b5fc65f4.svg" alt="" class="safety_net_img">
+    </div>
+  </div>
+</section>
+
       <div>
   <div class="trivia_faq_main">
     <section class="section section--qna">

@@ -1,22 +1,41 @@
-.coffee_good_section {
-  max-width: 1446px;
-  height: auto;
-  margin: 0 auto 18px;
+.spacing_coffee {
   padding: 0 20px;
-  .spotify_music_section {
-    width: 100%;
-    height: 416px;
+
+  .coffee_good_section {
+    max-width: 1406px;
+    height: auto;
+    margin: 0 auto 18px;
+
+    border-radius: 8.55px;
     background-image: url("../images/taskPage/coffee-good-bg-img.svg ");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    padding: 34px 46px 61px;
+    background-size: cover;
+    border-radius: 8.55px;
+
+    @media (max-width: 992px) {
+      height: 1009px;
+      background-image: url("../images/taskPage/coffee-good-bg-img-mob.png");
+    }
 
     .spotify_about {
+      padding: 34px 500px 61px 46px;
+
+      @media (min-width: 992px) and (max-width: 1350px) {
+        padding: 34px 250px 61px 46px;
+      }
+
+      @media (max-width: 992px) {
+        padding: 18px;
+      }
       .heading_box {
         display: flex;
         align-items: center;
         margin-bottom: 21px;
+        @media (max-width: 992px) {
+          align-items: flex-start;
+          flex-direction: column;
+        }
 
         .coffee_heading {
           font-weight: 800;
@@ -25,15 +44,26 @@
           letter-spacing: -0.01em;
           margin: 0;
           color: var(--white);
+          white-space: pre;
+
+          @media (max-width: 768px) {
+            font-size: 32px;
+            line-height: 56px;
+          }
         }
       }
       .coffee_lists {
         display: flex;
         align-self: center;
         gap: 45px;
+        @media (max-width: 992px) {
+          flex-wrap: wrap;
+          gap: 0;
+        }
 
         .list {
           ul {
+            margin: 0;
             li {
               list-style: none;
               margin-bottom: 33px;

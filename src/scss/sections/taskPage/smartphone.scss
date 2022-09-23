@@ -6,6 +6,11 @@
   .h_b_main_heading_img {
     width: auto;
     height: auto;
+
+    @media (max-width: 768px) {
+      padding-top: 64px;
+      border-top: 4px solid #f15a27;
+    }
   }
 
   .h_b_sub_heading {
@@ -15,13 +20,31 @@
     text-align: center;
     letter-spacing: 0.01em;
     margin: 0 0 39px;
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0 0 40px;
+    }
   }
 
   .home_barista_slider_box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
     .slider_card {
       width: 456px;
       border-radius: 16px;
       box-shadow: 0px 14px 44px rgba(121, 121, 121, 0.16);
+      @media (max-width: 768px) {
+        width: 100%;
+      }
 
       .h_b_card_img {
         width: 100%;
@@ -33,16 +56,31 @@
       .h_b_card_cantant {
         text-align: left;
         padding: 28px 29px 34px;
+
+        @media (max-width: 768px) {
+          padding: 18px 30px 34px 26px 24px;
+        }
         .main_heading {
           font-weight: 700;
           font-size: 24px;
           line-height: 34px;
           margin: 0 0 11px;
+
+          @media (max-width: 768px) {
+            font-size: 20px;
+            line-height: 32px;
+            margin: 0 0 8px;
+          }
         }
         .main_text {
           font-weight: 600;
           font-size: 16px;
           line-height: 28px;
+
+          @media (max-width: 768px) {
+            font-size: 16px;
+            line-height: 28px;
+          }
         }
       }
     }

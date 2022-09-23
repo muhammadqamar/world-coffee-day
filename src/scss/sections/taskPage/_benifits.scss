@@ -9,6 +9,11 @@
     height: auto;
     margin: 0 auto 10px;
     display: flex;
+
+    @media (max-width: 768px) {
+      padding-top: 64px;
+      border-top: 4px solid #f15a27;
+    }
   }
 
   .c_m_sub_heading {
@@ -102,7 +107,7 @@
       position: relative;
 
       @media (max-width: 768px) {
-        width: 100%;
+        max-width: 400px;
       }
 
       @media (min-width: 1099px) and (max-width: 1158px) {
@@ -172,6 +177,9 @@
           background-position: unset;
           background-image: url("../images/taskPage/c_machine_img_mob_8.svg");
           padding: 245px 18px 18px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
         }
 
         @media (min-width: 1099px) and (max-width: 1440px) {
