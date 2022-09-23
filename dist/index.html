@@ -258,6 +258,12 @@ svg, img {
   padding: 24px 23px 0;
 }
 
+@media (min-width: 992px) and (max-width: 1440px) {
+  .coffee_hero_container {
+    padding: 24px 16px 0;
+  }
+}
+
 .coffee_hero_container .page_name_heading {
   letter-spacing: .02em;
   border-left: 4px solid #f05a22;
@@ -278,6 +284,7 @@ svg, img {
   width: 100%;
   height: 950px;
   z-index: -1;
+  object-fit: cover;
   background: radial-gradient(123.79% 117.88% at 36.86% 133.53%, #fae9dd 0%, #f15a27 100%);
   border-radius: 16px 16px 40px 40px;
   position: absolute;
@@ -285,11 +292,36 @@ svg, img {
   left: 0;
 }
 
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_main_bg_img {
+    height: 577px;
+  }
+}
+
 .coffee_hero_container .coffee_inner_section .hero_heading_img {
   width: auto;
   margin: 0 auto 20px;
   padding-top: 47px;
-  display: flex;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_heading_img {
+    display: none;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_heading_img_mob {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_heading_img_mob {
+    width: auto;
+    margin: 0 auto;
+    padding: 47px 30px 0;
+    display: block;
+  }
 }
 
 .coffee_hero_container .coffee_inner_section .hero_main_geading {
@@ -300,6 +332,15 @@ svg, img {
   font-size: 48px;
   font-weight: 800;
   line-height: 58px;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_main_geading {
+    margin: 0 auto 18px;
+    padding: 0 22px;
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .coffee_hero_container .coffee_inner_section .hero_main_text {
@@ -313,12 +354,72 @@ svg, img {
   line-height: 24px;
 }
 
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_main_text {
+    margin: 0 auto 17px;
+    padding: 0 22px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section {
   flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
   gap: 42px;
   padding: 0 56px;
   display: flex;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section {
+    gap: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1440px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section {
+    padding: 0 16px;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card_3 {
+  width: 623px;
+  height: 456px;
+  background-image: url("hero-card-3-img.d6547604.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) and (max-width: 1352px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card_3 {
+    width: 455px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card_3 {
+    height: 400px;
+    width: 100%;
+    overflow: initial;
+  }
+}
+
+@media (max-width: 500px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card_3 {
+    height: 226px;
+    width: 100%;
+    overflow: initial;
+  }
 }
 
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card {
@@ -331,9 +432,137 @@ svg, img {
   box-shadow: 0 14px 24px #00000014;
 }
 
+@media (min-width: 992px) and (max-width: 1352px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card {
+    width: 455px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card {
+    min-height: 226px;
+  }
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card {
+    width: 100%;
+    overflow: initial;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+  }
+}
+
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:last-child {
   width: 100%;
   min-height: 291px;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:last-child {
+    min-height: 552px;
+    overflow: initial;
+    margin-top: 12px;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:last-child .h_card_bg_img_5 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:last-child .h_card_bg_img_5 {
+    display: none;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:last-child .h_card_bg_img_mob {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:last-child .h_card_bg_img_mob {
+    display: block;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:last-child .about {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:last-child .about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) {
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) {
+    min-height: 200px;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) .h_card_about_text_mob {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) .h_card_about_text_mob {
+    opacity: .8;
+    color: var(--black);
+    margin-top: -45px;
+    padding: 0 19px 17px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 17px;
+    display: block;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) .h_card_bg_img_2 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -11px;
+}
+
+@media (max-width: 600px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) .h_card_bg_img_2 {
+    display: none;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) .h_card_bg_img_mob {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) .h_card_bg_img_mob {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+    display: block;
+  }
 }
 
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .h_card_bg_img {
@@ -342,11 +571,34 @@ svg, img {
   right: 0;
 }
 
-.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card:nth-child(2) .h_card_bg_img {
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .h_card_bg_img_4 {
+  display: block;
+  position: absolute;
+  bottom: 0;
   right: -11px;
 }
 
+@media (max-width: 768px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .h_card_bg_img_4 {
+    display: none;
+  }
+}
+
+.coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .h_card_bg_img_4_mob {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .h_card_bg_img_4_mob {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    display: block;
+  }
+}
+
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about {
+  justify-content: space-between;
   align-items: center;
   display: flex;
 }
@@ -360,10 +612,27 @@ svg, img {
   line-height: 48px;
 }
 
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .h_card_heading {
+    padding: 19px 0 0 16px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .off_price {
   width: 185px;
   height: 185px;
   padding: 14px 14px 0 0;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .off_price {
+    width: 106px;
+    height: 105.78px;
+    margin-top: -14px;
+    padding: 0 23px 0 0;
+  }
 }
 
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .h_card_about_text {
@@ -374,14 +643,42 @@ svg, img {
   line-height: 38px;
 }
 
+@media (max-width: 1352px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .h_card_about_text {
+    padding: 15px 37px 0 17px;
+  }
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .h_card_about_text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .off_price_2 {
   width: 214px;
   height: 214px;
   margin: 38.5px 23px 38.5px 19px;
 }
 
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .off_price_2 {
+    width: 148px;
+    height: 148px;
+    margin: -12px 0 0 -14px;
+  }
+}
+
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .card_5_about {
   width: 495px;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .card_5_about {
+    width: 100%;
+    padding: 16px 18px 0;
+  }
 }
 
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .card_5_about .h_card_about_text_5 {
@@ -392,12 +689,26 @@ svg, img {
   line-height: 38px;
 }
 
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .card_5_about .h_card_about_text_5 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
 .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .card_5_about .h_card_heading_5 {
   color: var(--black);
   margin: 0;
   font-size: 40px;
   font-weight: 800;
   line-height: 48px;
+}
+
+@media (max-width: 992px) {
+  .coffee_hero_container .coffee_inner_section .hero_coffee_flex_section .h_c_card .about .card_5_about .h_card_heading_5 {
+    font-size: 18px;
+    line-height: 38px;
+  }
 }
 
 .bg-red {
@@ -411,9 +722,27 @@ svg, img {
   padding: 90px 123px 74px;
 }
 
+@media (max-width: 768px) {
+  .coffee__moments__hero {
+    padding: 54px 24px 67px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .coffee__moments__hero {
+    padding: 90px 70px 74px;
+  }
+}
+
 .coffee__moments__hero .coffee__moments_headings {
   width: 516px;
   margin: 0 auto;
+}
+
+@media (max-width: 999px) {
+  .coffee__moments__hero .coffee__moments_headings {
+    width: 100%;
+  }
 }
 
 .coffee__moments__hero .coffee__moments_headings .main_heading {
@@ -425,42 +754,145 @@ svg, img {
   line-height: 74px;
 }
 
+@media (max-width: 768px) {
+  .coffee__moments__hero .coffee__moments_headings .main_heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
 .coffee__moments__hero .coffee__moments_headings .sub_heading {
-  text-align: center;
-  letter-spacing: -.01em;
-  color: #f15a25;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 74px;
+  width: auto;
+  margin: auto;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .coffee__moments__hero .coffee__moments_headings .sub_heading {
+    margin: 0 auto 32px;
+  }
 }
 
 .coffee__moments__hero .c_m_cards_box .c_m_card {
-  flex-wrap: wrap;
   align-items: center;
   gap: 73.56px;
   display: flex;
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 999px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
 }
 
 .coffee__moments__hero .c_m_cards_box .c_m_card:nth-child(2n) {
   gap: 35.21px;
 }
 
+@media (max-width: 992px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card:nth-child(2n) {
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
+}
+
 .coffee__moments__hero .c_m_cards_box .c_m_card:not(:first-child) {
   margin-top: -100px;
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card:not(:first-child) {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card:not(:first-child) {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
 }
 
 .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img {
   width: 500.44px;
   height: 540px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img {
+    width: 435px;
+    height: auto;
+  }
 }
 
 .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img_2 {
   width: 631.4px;
   height: 556.3px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img_2 {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img_2 {
+    width: 515px;
+    height: auto;
+  }
+}
+
+.coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img_1_mob {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img_1_mob {
+    width: auto;
+    height: auto;
+    display: block;
+  }
+}
+
+.coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img_2_mob {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_img_2_mob {
+    width: auto;
+    height: auto;
+    display: block;
+  }
 }
 
 .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_contant {
   width: 495px;
+}
+
+@media (max-width: 992px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_contant {
+    width: 100%;
+  }
 }
 
 .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_contant .card_heading {
@@ -471,6 +903,14 @@ svg, img {
   line-height: 40px;
 }
 
+@media (max-width: 768px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_contant .card_heading {
+    margin: 0 0 8px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_contant .card_text {
   color: #000;
   font-size: 16px;
@@ -478,20 +918,25 @@ svg, img {
   line-height: 28px;
 }
 
+@media (max-width: 768px) {
+  .coffee__moments__hero .c_m_cards_box .c_m_card .c_m_card_contant .card_text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
 .coffee__machine__section {
   max-width: 1446px;
   margin: 0 auto;
   padding: 0 23px;
+  overflow: hidden;
 }
 
 .coffee__machine__section .c_m_main_heading {
-  text-align: center;
-  letter-spacing: -.01em;
-  color: var(--text-color);
-  margin-bottom: 10px;
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 74px;
+  width: auto;
+  height: auto;
+  margin: 0 auto 10px;
+  display: flex;
 }
 
 .coffee__machine__section .c_m_sub_heading {
@@ -506,6 +951,13 @@ svg, img {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_sub_heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
 .coffee__machine__section .c_m_sub_heading:before {
   content: " ";
   width: 100%;
@@ -515,6 +967,12 @@ svg, img {
   position: absolute;
   top: 50%;
   left: -280px;
+}
+
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_sub_heading:before {
+    display: none;
+  }
 }
 
 .coffee__machine__section .c_m_sub_heading:after {
@@ -528,6 +986,12 @@ svg, img {
   right: -280px;
 }
 
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_sub_heading:after {
+    display: none;
+  }
+}
+
 .coffee__machine__section .card_heading_two {
   text-align: center;
   margin: 56px 0 41px;
@@ -536,8 +1000,25 @@ svg, img {
   line-height: 74px;
 }
 
+@media (max-width: 768px) {
+  .coffee__machine__section .card_heading_two {
+    margin: 55px 0 35px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.coffee__machine__section .c_m_flex__box.second_section:nth-child(1) .card_bg_img {
+  background-image: url("c_machine_img_2.23de771c.svg") !important;
+}
+
+.coffee__machine__section .c_m_flex__box.second_section:nth-child(2) .card_bg_img {
+  background-image: url("c_machine_img_1.da903767.svg") !important;
+}
+
 .coffee__machine__section .c_m_flex__box {
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 12px;
   display: flex;
@@ -548,17 +1029,59 @@ svg, img {
   min-height: 465px;
   background: #e3ebf0;
   border-radius: 16px;
-  padding: 42px 45px 55px;
   position: relative;
 }
 
-.coffee__machine__section .c_m_flex__box .card_box .c_machine_img {
+@media (min-width: 1099px) and (max-width: 1150px) {
+  .coffee__machine__section .c_m_flex__box .card_box {
+    width: 520px;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1440px) {
+  .coffee__machine__section .c_m_flex__box .card_box {
+    width: 550px;
+  }
+}
+
+.coffee__machine__section .c_m_flex__box .card_box:nth-child(2) .card_bg_img {
+  background-image: url("c_machine_img_7.9e7e15c5.svg");
+}
+
+.coffee__machine__section .c_m_flex__box .card_box:nth-child(3) .card_bg_img {
+  background-image: url("c_machine_img_6.5709a543.svg");
+}
+
+.coffee__machine__section .c_m_flex__box .card_box:nth-child(4) .card_bg_img {
+  background-image: url("c_machine_img_5.150ef1d6.svg");
+}
+
+.coffee__machine__section .c_m_flex__box .card_box:nth-child(5) .card_bg_img {
+  background-image: url("c_machine_img_4.4e4b2140.svg");
+}
+
+.coffee__machine__section .c_m_flex__box .card_box:nth-child(6) .card_bg_img {
+  background-image: url("c_machine_img_3.e5a5e82d.svg");
+}
+
+.coffee__machine__section .c_m_flex__box .card_box .card_bg_img {
+  width: 100%;
+  min-height: 465px;
+  background-image: url("c_machine_img_8.189ca941.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 42px 45px 55px;
+}
+
+.coffee__machine__section .c_m_flex__box .card_box .card_bg_img .c_machine_img {
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.coffee__machine__section .c_m_flex__box .card_box a button {
+.coffee__machine__section .c_m_flex__box .card_box .card_bg_img a button {
   background: var(--white);
   z-index: 1;
   position: absolute;
@@ -566,13 +1089,19 @@ svg, img {
   left: 45px;
 }
 
-.coffee__machine__section .c_m_flex__box .card_box .card_about {
+.coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about {
   width: 315px;
   z-index: 1;
   position: relative;
 }
 
-.coffee__machine__section .c_m_flex__box .card_box .card_about .box_title {
+@media (min-width: 992px) and (max-width: 1099px) {
+  .coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about {
+    width: 225px;
+  }
+}
+
+.coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about .box_title {
   color: var(--black);
   margin: 0 0 18px;
   font-size: 32px;
@@ -580,7 +1109,7 @@ svg, img {
   line-height: 42px;
 }
 
-.coffee__machine__section .c_m_flex__box .card_box .card_about .box_about {
+.coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about .box_about {
   color: var(--black);
   font-size: 16px;
   font-weight: 400;
@@ -694,148 +1223,6 @@ svg, img {
   line-height: 28px;
 }
 
-.task_faq_main {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 30px 107px;
-}
-
-@media (max-width: 999px) {
-  .task_faq_main {
-    padding: 0 20px;
-  }
-}
-
-.section--qna {
-  background: none;
-  border-radius: 40px;
-  padding: 40px;
-}
-
-@media (max-width: 1199px) {
-  .section--qna {
-    border-radius: 20px 20px 0 0;
-    padding: 32px 24px;
-  }
-}
-
-.section--qna .section__title {
-  letter-spacing: .01em;
-  color: var(--brand-100);
-  margin-bottom: 24px;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-}
-
-.section--qna .qna + .qna {
-  margin-top: 24px;
-}
-
-.section--qna .qna__header {
-  cursor: pointer;
-  border-bottom: 2px solid var(--black);
-  background-color: #0000;
-  border-radius: 0;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1em;
-  padding-right: 45px;
-  transition: background-color .2s;
-  display: flex;
-  position: relative;
-}
-
-.section--qna .qna__header:hover {
-  background-color: #0000;
-}
-
-.section--qna .qna__header::-webkit-details-marker {
-  display: none;
-}
-
-.section--qna .qna__header:before {
-  content: " ";
-  height: 40px;
-  width: 40px;
-  background-image: url("faq-box-black.030e0d98.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 0;
-  display: block;
-  position: absolute;
-  bottom: -4px;
-  right: -5px;
-}
-
-.section--qna .qna__header:after {
-  content: " ";
-  height: 40px;
-  width: 40px;
-  background-image: url("faq-box-red.dcc4380f.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 0;
-  display: block;
-  position: absolute;
-  bottom: 4px;
-  right: -17px;
-}
-
-.section--qna .qna__title {
-  font-size: 30.88px;
-  font-weight: bold;
-  line-height: 1.7;
-}
-
-@media (max-width: 768px) {
-  .section--qna .qna__title {
-    font-size: 20px;
-  }
-}
-
-.section--qna .qna__title-icon {
-  width: 1.25rem;
-  height: auto;
-  flex: 0 0 1.25rem;
-}
-
-.section--qna .qna__content {
-  color: var(--red-400);
-  padding: 32px 32px 0 0;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.5em;
-}
-
-.section--qna .qna__content p + p {
-  margin-top: 1em;
-}
-
-.section--qna .qna__content ul {
-  padding-left: 1.25em;
-}
-
-.section--qna .qna__content li + li {
-  margin-top: .5em;
-}
-
-.section--qna .qna__content a {
-  font-weight: 700;
-}
-
-.section--qna .qna__content a:hover {
-  text-decoration: underline 2px var(--brand);
-}
-
-.section--qna .qna[open] .qna__header:after {
-  content: " ";
-  background-image: url("faq-box-red-outline.fc78fef0.svg");
-  position: absolute;
-}
-
 .books_dedicated_section {
   max-width: 1446px;
   text-align: center;
@@ -843,13 +1230,18 @@ svg, img {
   padding: 82px 20px 0;
 }
 
-.books_dedicated_section .book_heading_img {
-  width: auto;
-  margin-bottom: 47px;
+.books_dedicated_section .heading_img {
+  max-width: 641px;
+  margin: 0 auto 47px;
   position: relative;
 }
 
-.books_dedicated_section .book_heading_img:before {
+.books_dedicated_section .heading_img .book_heading_img {
+  width: auto;
+  height: auto;
+}
+
+.books_dedicated_section .heading_img:before {
   content: " ";
   width: 100%;
   height: 4px;
@@ -860,7 +1252,7 @@ svg, img {
   left: -280px;
 }
 
-.books_dedicated_section .book_heading_img:after {
+.books_dedicated_section .heading_img:after {
   content: " ";
   width: 100%;
   height: 4px;
@@ -971,6 +1363,348 @@ svg, img {
 
 .books_dedicated_section .books_cards_box .book_card .card_main_contant .boox_about .book_buy a button {
   background-color: var(--white);
+}
+
+.spotify_music_section {
+  max-width: 1446px;
+  height: 422px;
+  margin: 13px auto 19px;
+  padding: 0 20px;
+}
+
+.spotify_music_section .spotify_bg_color {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 13.6216px;
+  position: relative;
+}
+
+.spotify_music_section .spotify_bg_color .spotify_bg_img {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spotify_music_section .spotify_bg_color .spotify_music_section {
+  width: 100%;
+  position: relative;
+}
+
+.spotify_music_section .spotify_bg_color .spotify_music_section .spotify_about {
+  width: 482px;
+  margin: 0 178px 0 auto;
+  padding-top: 68px;
+}
+
+.spotify_music_section .spotify_bg_color .spotify_music_section .spotify_about .spotify-img {
+  width: auto;
+  margin-bottom: 24.28px;
+}
+
+.spotify_music_section .spotify_bg_color .spotify_music_section .spotify_about .spotify_text {
+  letter-spacing: .01em;
+  color: var(--black);
+  margin-bottom: 39.34px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.spotify_music_section .spotify_bg_color .spotify_music_section .spotify_about a button {
+  background-color: #9edbcb;
+}
+
+.coffee_good_section {
+  max-width: 1446px;
+  height: auto;
+  margin: 0 auto 18px;
+  padding: 0 20px;
+}
+
+.coffee_good_section .spotify_music_section {
+  width: 100%;
+  height: 416px;
+  background-image: url("coffee-good-bg-img.073b4882.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 34px 46px 61px;
+}
+
+.coffee_good_section .spotify_music_section .spotify_about .heading_box {
+  align-items: center;
+  margin-bottom: 21px;
+  display: flex;
+}
+
+.coffee_good_section .spotify_music_section .spotify_about .heading_box .coffee_heading {
+  letter-spacing: -.01em;
+  color: var(--white);
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 56px;
+}
+
+.coffee_good_section .spotify_music_section .spotify_about .coffee_lists {
+  align-self: center;
+  gap: 45px;
+  display: flex;
+}
+
+.coffee_good_section .spotify_music_section .spotify_about .coffee_lists .list ul li {
+  max-width: 352px;
+  margin-bottom: 33px;
+  list-style: none;
+  position: relative;
+}
+
+.coffee_good_section .spotify_music_section .spotify_about .coffee_lists .list ul li:before {
+  content: " ";
+  width: 25px;
+  height: 17px;
+  background-image: url("tick-img.fc299127.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 8px;
+  left: -40px;
+}
+
+.coffee_good_section .spotify_music_section .spotify_about .coffee_lists .list ul li .list_text {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.public_now_section {
+  max-width: 1446px;
+  margin: 0 auto 66px;
+  padding: 0 20px;
+}
+
+.public_now_section .flex_box_imgs {
+  background: var(--white);
+  border-radius: 13.6216px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  padding: 24px;
+  display: flex;
+}
+
+.trivia_faq_main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 107px;
+}
+
+@media (max-width: 999px) {
+  .trivia_faq_main {
+    padding: 0 24px;
+  }
+}
+
+.section--qna {
+  background: none;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+  .section--qna {
+    border-radius: 0;
+    padding: 0 !important;
+  }
+}
+
+.section--qna .section__title {
+  text-align: center;
+  letter-spacing: .01em;
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+@media (max-width: 768px) {
+  .section--qna .section__title {
+    width: 100%;
+    border-top: 4px solid #f15a27;
+    margin-bottom: 6px;
+    padding-top: 25px;
+  }
+}
+
+.section--qna .heading_img {
+  width: 514px;
+  margin: 0 auto 57px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section--qna .heading_img {
+    width: 100%;
+    margin: 0 auto 45px;
+  }
+}
+
+.section--qna .heading_img .faq_h_img {
+  width: auto;
+  height: auto;
+}
+
+.section--qna .heading_img:before {
+  content: " ";
+  width: 100%;
+  height: 4px;
+  z-index: -1;
+  background: linear-gradient(90deg, #f15a27 60%, #09097900 60%);
+  position: absolute;
+  top: 50%;
+  left: -330px;
+}
+
+@media (max-width: 768px) {
+  .section--qna .heading_img:before {
+    display: none;
+  }
+}
+
+.section--qna .heading_img:after {
+  content: " ";
+  width: 100%;
+  height: 4px;
+  z-index: -1;
+  background: linear-gradient(90deg, #09097900 40%, #f15a27 38%);
+  position: absolute;
+  top: 50%;
+  right: -330px;
+}
+
+@media (max-width: 768px) {
+  .section--qna .heading_img:after {
+    display: none;
+  }
+}
+
+.section--qna .qna {
+  background: #fff;
+  border: 1px solid #0003;
+  border-radius: 16px;
+  padding: 39px 37px 42px;
+}
+
+@media (max-width: 768px) {
+  .section--qna .qna {
+    padding: 24px 24px 28px;
+  }
+}
+
+.section--qna .qna + .qna {
+  margin-top: 20px;
+}
+
+.section--qna .qna__header {
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  border-radius: 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding-right: 65px;
+  transition: background-color .2s;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section--qna .qna__header {
+    padding-right: 25px;
+  }
+}
+
+.section--qna .qna__header:hover {
+  background-color: #0000;
+}
+
+.section--qna .qna__header::-webkit-details-marker {
+  display: none;
+}
+
+.section--qna .qna__header:before {
+  content: " ";
+  width: 30px;
+  height: 15px;
+  background-image: url("faq-arrow-img.b38e9d46.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 0;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 19px;
+}
+
+.section--qna .qna__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+@media (max-width: 768px) {
+  .section--qna .qna__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.section--qna .qna__title-icon {
+  width: 1.25rem;
+  height: auto;
+  flex: 0 0 1.25rem;
+}
+
+.section--qna .qna__content {
+  color: #1d1d1d;
+  opacity: .8;
+  max-width: 839px;
+  padding-top: 21px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media (max-width: 768px) {
+  .section--qna .qna__content {
+    padding-top: 8px;
+  }
+}
+
+.section--qna .qna__content p + p {
+  margin-top: 1em;
+}
+
+.section--qna .qna__content ul {
+  padding-left: 1.25em;
+}
+
+.section--qna .qna__content li + li {
+  margin-top: .5em;
+}
+
+.section--qna .qna__content a {
+  font-weight: 700;
+}
+
+.section--qna .qna__content a:hover {
+  text-decoration: underline 2px var(--brand);
 }
 
 .article__header {
@@ -1110,6 +1844,7 @@ a {
   <div class="coffee_inner_section">
     <img src="/coffee-hero-bg.496212c3.svg" alt="" class="hero_main_bg_img">
     <img src="/hero_heading_img.b21ee208.svg" alt="" class="hero_heading_img">
+    <img src="/hero-mob-heading-img.39c7dfaf.svg" alt="" class="hero_heading_img_mob">
     <h1 class="hero_main_geading">Γιόρτασε μαζί μας την Παγκόσμια Ημέρα Καφέ</h1>
     <p class="hero_main_text">
       Για κάθε επίπεδο barista, από αρχάριο, μέχρι expert και για κάθε τύπο καφέ από espresso μέχρι
@@ -1134,13 +1869,19 @@ a {
             <strong> δώρο ο καφές σου για 1 χρόνο!*</strong>
           </p>
         </div>
-        <img src="/hero-2-card-bg-img.03cbc04b.svg" alt="" class="h_card_bg_img">
+
+        <img src="/hero-2-card-bg-img.03cbc04b.svg" alt="" class="h_card_bg_img_2">
+        <img src="/hero-2-card-bg-img-mob.0273376b.png" alt="" class="h_card_bg_img_mob">
+        <p class="h_card_about_text_mob">
+          *Διάρκεια προσφορά από 22/09 έως 02/10. Ισχύει για συσκευές καφέ από 110€ και άνω.
+          Προτεινόμενη δοσολογία καφέ για μονό espresso: 6-7gr
+        </p>
       </div>
 
       <!-- 3 -->
 
-      <div class="h_c_card">
-        <img src="/hero-card-3-img.d6547604.svg" alt="" class="h_card_bg_img">
+      <div class="h_c_card_3">
+        <!-- <img src="./images/taskPage/hero-card-3-img.svg" alt="" class="h_card_bg_img" /> -->
       </div>
 
       <!-- 4 -->
@@ -1153,7 +1894,8 @@ a {
             <strong> ΔΩΡΟ 2 συσκευασίες Carafe Mild (535ml).</strong>
           </p>
         </div>
-        <img src="/hero-4-card-bg-img.10d6dc4d.png" alt="" class="h_card_bg_img">
+        <img src="/hero-4-card-bg-img.10d6dc4d.png" alt="" class="h_card_bg_img_4">
+        <img src="/hero-4-card-bg-img-mob.61745958.png" alt="" class="h_card_bg_img_4_mob">
       </div>
 
       <!-- 5 -->
@@ -1169,7 +1911,8 @@ a {
             <p class="h_card_about_text_5">Ισχύει από 25/09 έως 16/10</p>
           </div>
         </div>
-        <img src="/hero-card-5-bg-img.92b88d27.svg" alt="" class="h_card_bg_img">
+        <img src="/hero-card-5-bg-img.92b88d27.svg" alt="" class="h_card_bg_img_5">
+        <img src="/hero-card-5-bg-img-mob.60b09937.svg" alt="" class="h_card_bg_img_mob">
       </div>
     </div>
   </div>
@@ -1177,13 +1920,18 @@ a {
 
       <section class="coffee__moments__hero">
   <div class="coffee__moments_headings">
-    <h1 class="main_heading">Όλες οι στιγμές καφέ</h1>
-    <h3 class="sub_heading">που αγαπάμε!</h3>
+    <h1 class="main_heading">
+      Όλες οι <br>
+      στιγμές καφέ
+    </h1>
+    <!-- <h3 class="sub_heading">που αγαπάμε!</h3> -->
+    <img src="/coffee-mechine-heading-img.e7ec0853.svg" alt="" class="sub_heading">
   </div>
   <div class="c_m_cards_box">
     <!-- card 1 -->
     <div class="c_m_card">
       <img src="/coffee_moments_card_img_1.52e9e354.svg" alt="" class="c_m_card_img">
+      <img src="/coffee_moments_card_img_mob_5.02ca6933.svg" alt="" class="c_m_card_img_1_mob">
       <div class="c_m_card_contant">
         <h5 class="card_heading">Όταν χρειαζόμαστε ένα boost για μια νέα αρχή</h5>
         <p class="card_text">
@@ -1204,10 +1952,12 @@ a {
         </p>
       </div>
       <img src="/coffee_moments_card_img_2.edd7592b.svg" alt="" class="c_m_card_img_2">
+      <img src="/coffee_moments_card_img_mob_4.4ea9d1a4.svg" alt="" class="c_m_card_img_2_mob">
     </div>
     <!-- card 3 -->
     <div class="c_m_card">
       <img src="/coffee_moments_card_img_3.1700d32a.svg" alt="" class="c_m_card_img">
+      <img src="/coffee_moments_card_img_mob_3.98e5b80f.svg" alt="" class="c_m_card_img_1_mob">
       <div class="c_m_card_contant">
         <h5 class="card_heading">Όταν ξαναβρισκόμαστε και μοιραζόμαστε στιγμές</h5>
         <p class="card_text">
@@ -1227,10 +1977,12 @@ a {
         </p>
       </div>
       <img src="/coffee_moments_card_img_4.e2a3e88f.svg" alt="" class="c_m_card_img_2">
+      <img src="/coffee_moments_card_img_mob_2.db38b139.svg" alt="" class="c_m_card_img_2_mob">
     </div>
     <!-- card 5 -->
     <div class="c_m_card">
       <img src="/coffee_moments_card_img_5.410c8123.svg" alt="" class="c_m_card_img">
+      <img src="/coffee_moments_card_img_mob_1.5c925514.svg" alt="" class="c_m_card_img_1_mob">
       <div class="c_m_card_contant">
         <h5 class="card_heading">Όταν ο χρόνος με τον εαυτό μας είναι ό,τι πιο πολύτιμο</h5>
         <p class="card_text">
@@ -1243,298 +1995,185 @@ a {
 </section>
 
       <section class="coffee__machine__section">
-  <h3 class="c_m_main_heading">Ο απόλυτος οδηγός</h3>
+  <!-- <h3 class="c_m_main_heading">Ο απόλυτος οδηγός</h3> -->
+  <img src="/coffee-m-heading.1b4e8612.svg" alt="" class="c_m_main_heading">
   <h1 class="c_m_sub_heading">αγοράς καφετιέρας</h1>
   <div class="c_m_flex__box">
     <!-- card  1 -->
     <div class="card_box">
-      <div class="card_about">
-        <h5 class="box_title">Αυτόματες μηχανές καφέ</h5>
-        <p class="box_about">
-          Για απολαυστικό και αρωματικό καφέ με ένα μόνο πάτημα, με επιλογές ενσωματωμένου μύλου για
-          να τον απολαμβάνεις πάντα φρεσκοκομμένο και πλούσιο!
-        </p>
+      <div class="card_bg_img">
+        <div class="card_about">
+          <h5 class="box_title">Αυτόματες μηχανές καφέ</h5>
+          <p class="box_about">
+            Για απολαυστικό και αρωματικό καφέ με ένα μόνο πάτημα, με επιλογές ενσωματωμένου μύλου
+            για να τον απολαμβάνεις πάντα φρεσκοκομμένο και πλούσιο!
+          </p>
+        </div>
+        <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
+        <!-- <img class="c_machine_img" src="./images/taskPage/c_machine_img_8.svg" alt="play" /> -->
       </div>
-      <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
-      <img class="c_machine_img" src="/c_machine_img_8.189ca941.svg" alt="play">
     </div>
     <!-- card  2 -->
     <div class="card_box">
-      <div class="card_about">
-        <h5 class="box_title">Χειροκίνητες μηχανές καφέ</h5>
-        <p class="box_about">
-          Η μηχανή-μύηση στα μυστικά των baristas, για απόλυτο έλεγχο της ποιότητας και της έντασης
-          του espresso σου σε κάθε στάδιο της προετοιμασίας του!
-        </p>
+      <div class="card_bg_img">
+        <div class="card_about">
+          <h5 class="box_title">Χειροκίνητες μηχανές καφέ</h5>
+          <p class="box_about">
+            Η μηχανή-μύηση στα μυστικά των baristas, για απόλυτο έλεγχο της ποιότητας και της
+            έντασης του espresso σου σε κάθε στάδιο της προετοιμασίας του!
+          </p>
+        </div>
+        <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
+        <!-- <img class="c_machine_img" src="./images/taskPage/c_machine_img_7.svg" alt="play" /> -->
       </div>
-      <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
-      <img class="c_machine_img" src="/c_machine_img_7.9e7e15c5.svg" alt="play">
     </div>
     <!-- card  3 -->
     <div class="card_box">
-      <div class="card_about">
-        <h5 class="box_title">Μηχανές καφέ με κάψουλα</h5>
-        <p class="box_about">
-          Η βολική και γρήγορη λύση, με επιλογές ενσωματωμένης συσκευής για αφρόγαλα για τον
-          αγαπημένο σου κρεμώδη latte ή cappuccino!
-        </p>
+      <div class="card_bg_img">
+        <div class="card_about">
+          <h5 class="box_title">Μηχανές καφέ με κάψουλα</h5>
+          <p class="box_about">
+            Η βολική και γρήγορη λύση, με επιλογές ενσωματωμένης συσκευής για αφρόγαλα για τον
+            αγαπημένο σου κρεμώδη latte ή cappuccino!
+          </p>
+        </div>
+        <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
+        <!-- <img class="c_machine_img" src="./images/taskPage/c_machine_img_6.svg" alt="play" /> -->
       </div>
-      <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
-      <img class="c_machine_img" src="/c_machine_img_6.5709a543.svg" alt="play">
     </div>
     <!-- card  1 -->
     <div class="card_box">
-      <div class="card_about">
-        <h5 class="box_title">Καφετιέρες φίλτρου</h5>
-        <p class="box_about">
-          Η αγαπημένη ήρεμη δύναμη στον κόσμο του καφέ, με επιλογές για κανάτα-θερμός που διατηρεί
-          τον καφέ φίλτρου ζεστό χωρίς να καίγεται. !
-        </p>
+      <div class="card_bg_img">
+        <div class="card_about">
+          <h5 class="box_title">Καφετιέρες φίλτρου</h5>
+          <p class="box_about">
+            Η αγαπημένη ήρεμη δύναμη στον κόσμο του καφέ, με επιλογές για κανάτα-θερμός που διατηρεί
+            τον καφέ φίλτρου ζεστό χωρίς να καίγεται. !
+          </p>
+        </div>
+        <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
+        <!-- <img class="c_machine_img" src="./images/taskPage/c_machine_img_5.svg" alt="play" /> -->
       </div>
-      <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
-      <img class="c_machine_img" src="/c_machine_img_5.150ef1d6.svg" alt="play">
     </div>
     <!-- card  2 -->
     <div class="card_box">
-      <div class="card_about">
-        <h5 class="box_title">Μηχανές για φραπέ</h5>
-        <p class="box_about">
-          Η επιλογή για το σήμα κατατεθέν του καλοκαιριού, αλλά και όλων των εποχών για σένα που
-          θέλεις τον φραπέ ή τον freddo espresso σου τέλεια χτυπημένο!
-        </p>
+      <div class="card_bg_img">
+        <div class="card_about">
+          <h5 class="box_title">Μηχανές για φραπέ</h5>
+          <p class="box_about">
+            Η επιλογή για το σήμα κατατεθέν του καλοκαιριού, αλλά και όλων των εποχών για σένα που
+            θέλεις τον φραπέ ή τον freddo espresso σου τέλεια χτυπημένο!
+          </p>
+        </div>
+        <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
+        <!-- <img class="c_machine_img" src="./images/taskPage/c_machine_img_4.svg" alt="play" /> -->
       </div>
-      <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
-      <img class="c_machine_img" src="/c_machine_img_4.4e4b2140.svg" alt="play">
     </div>
     <!-- card  3 -->
     <div class="card_box">
-      <div class="card_about">
-        <h5 class="box_title">Ελληνικός καφές</h5>
-        <p class="box_about">
-          Για μία σύγχρονη πινελιά στην πιο παραδοσιακή σου αγάπη που, χωρίς αναμονή στο ψήσιμο και
-          χωρίς περιορισμό στα φλυτζάνια που μπορείς να ετοιμάσεις ταυτόχρνα!
-        </p>
+      <div class="card_bg_img">
+        <div class="card_about">
+          <h5 class="box_title">Ελληνικός καφές</h5>
+          <p class="box_about">
+            Για μία σύγχρονη πινελιά στην πιο παραδοσιακή σου αγάπη που, χωρίς αναμονή στο ψήσιμο
+            και χωρίς περιορισμό στα φλυτζάνια που μπορείς να ετοιμάσεις ταυτόχρνα!
+          </p>
+        </div>
+        <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
+        <!-- <img class="c_machine_img" src="./images/taskPage/c_machine_img_3.svg" alt="play" /> -->
       </div>
-      <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
-      <img class="c_machine_img" src="/c_machine_img_3.e5a5e82d.svg" alt="play">
     </div>
   </div>
   <!--  -->
   <h1 class="card_heading_two">Ολοκλήρωσε το coffee bar σου με</h1>
   <!--  -->
-  <div class="c_m_flex__box">
+  <div class="c_m_flex__box second_section">
     <!-- card  1 -->
     <div class="card_box">
-      <div class="card_about">
-        <h5 class="box_title">Αξεσουάρ καφέ</h5>
-        <p class="box_about">
-          Ζήσε την ολοκληρωμένη εμπειρία του καφέ στο σπίτι με συσκευή για αφρόγαλα, μύλο άλεσης και
-          ειδικά προϊόντα καθαρισμού που θα κρατάνε την καφετιέρα σου σαν καινούρια!
-        </p>
+      <div class="card_bg_img">
+        <div class="card_about">
+          <h5 class="box_title">Αξεσουάρ καφέ</h5>
+          <p class="box_about">
+            Ζήσε την ολοκληρωμένη εμπειρία του καφέ στο σπίτι με συσκευή για αφρόγαλα, μύλο άλεσης
+            και ειδικά προϊόντα καθαρισμού που θα κρατάνε την καφετιέρα σου σαν καινούρια!
+          </p>
+        </div>
+        <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
+        <!-- <img class="c_machine_img" src="./images/taskPage/c_machine_img_2.svg" alt="play" /> -->
       </div>
-      <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
-      <img class="c_machine_img" src="/c_machine_img_2.23de771c.svg" alt="play">
     </div>
     <!-- card  2 -->
     <div class="card_box">
-      <div class="card_about">
-        <h5 class="box_title">Κούπες Καφέ</h5>
-        <p class="box_about">
-          Ζήσε την ολοκληρωμένη εμπειρία του καφέ στο σπίτι με συσκευή για αφρόγαλα, μύλο άλεσης και
-          ειδικά προϊόντα καθαρισμού που θα κρατάνε την καφετιέρα σου σαν καινούρια!
-        </p>
-      </div>
-      <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
-      <img class="c_machine_img" src="/c_machine_img_1.da903767.svg" alt="play">
-    </div>
-  </div>
-</section>
-
-
-      <section class="features__section">
-  <h3 class="features_main_heading">Χαρακτηριστικά που κάνουν τη διαφορά</h3>
-
-  <div class="feature_flex_box">
-    <img src="/feature_c_m_img.f6aaacf6.svg" alt="" class="feature_c_m_img">
-    <img src="/feature_map_img.2a94054d.svg" alt="" class="feature_map_img">
-    <div class="feature_content">
-      <!-- 1 -->
-      <div class="feature_about_box">
-        <h6 class="f_a_heading">Σωστό άλεσμα</h6>
-        <p class="f_a_text">
-          Τίποτα δεν συγκρίνεται με τον φρεσκοκομμένο καφέ από ολόκληρους καβουρδισμένους κόκκους!
-        </p>
-      </div>
-      <!-- 2 -->
-      <div class="feature_about_box">
-        <h6 class="f_a_heading">Καθαρά φίλτρα</h6>
-        <p class="f_a_text">
-          Σχολαστικό καθάρισμα με το ειδικό βουρτσάκι καθαρισμού της «σίτας», που θα κάνει κάθε καφέ
-          σαν τον πρώτο!
-        </p>
-      </div>
-      <!-- 3 -->
-      <div class="feature_about_box">
-        <h6 class="f_a_heading">Καθαρό νερό</h6>
-        <p class="f_a_text">
-          Με ενσωματωμένο φίλτρο ενεργού άνθρακα απαλλάσσεσαι από το χλώριο και η γεύση του καφέ σου
-          δεν είναι πια διαπραγματεύσιμη!
-        </p>
-      </div>
-      <!-- 4 -->
-      <div class="feature_about_box">
-        <h6 class="f_a_heading">Τακτική αφαλάτωση</h6>
-        <p class="f_a_text">
-          Ειδικά προϊόντα αφαλάτωσης - ή λίγο ξύδι αν συμφωνεί και ο κατασκευαστής - διατηρούν την
-          καφετιέρα σου καθαρή και λειτουργική για περισσότερο καιρό!
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <section class="home_barista__container">
-  <img src="/home-barista-heading-img.895602cc.svg" alt="" class="h_b_main_heading_img">
-  <h1 class="h_b_sub_heading">για να γίνεις Home Barista!</h1>
-
-  <div class="home_barista_slider_box">
-    <div class="slider_card">
-      <img src="/slider-card-img.dd715f68.svg" alt="" class="h_b_card_img">
-      <div class="h_b_card_cantant">
-        <h6 class="main_heading">Ανακάλυψε Χρήσιμα Tips & γίνε HOME Barista!</h6>
-        <p class="main_text">Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-      <section class="books_dedicated_section">
-  <img src="/book-main-heading.33981161.svg" alt="" class="book_heading_img">
-
-  <div class="books_cards_box">
-    <!-- 1 -->
-    <div class="book_card">
-      <img src="/book-card-bg-img.4760f79b.svg" alt="" class="b_c_bg_img">
-      <div class="card_main_contant">
-        <img src="/book-1.261442d9.svg" alt="" class="book_img">
-        <div class="boox_about">
-          <h6 class="book_headig">Τα μυστικά του καφέ</h6>
-          <div class="book_buy">
-            <p class="book_price">17,99€</p>
-            <a href=""><button class="btn">Add to Cart</button></a>
-          </div>
+      <div class="card_bg_img">
+        <div class="card_about">
+          <h5 class="box_title">Κούπες Καφέ</h5>
+          <p class="box_about">
+            Ζήσε την ολοκληρωμένη εμπειρία του καφέ στο σπίτι με συσκευή για αφρόγαλα, μύλο άλεσης
+            και ειδικά προϊόντα καθαρισμού που θα κρατάνε την καφετιέρα σου σαν καινούρια!
+          </p>
         </div>
-      </div>
-    </div>
-    <!-- 2 -->
-    <div class="book_card">
-      <img src="/book-card-bg-img.4760f79b.svg" alt="" class="b_c_bg_img">
-      <div class="card_main_contant">
-        <img src="/book-2.f5c6f1d0.svg" alt="" class="book_img">
-        <div class="boox_about">
-          <h6 class="book_headig">Πάμε για καφέ...</h6>
-          <div class="book_buy">
-            <p class="book_price">2,23€</p>
-            <a href=""><button class="btn">Add to Cart</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 3 -->
-    <div class="book_card">
-      <img src="/book-card-bg-img.4760f79b.svg" alt="" class="b_c_bg_img">
-      <div class="card_main_contant">
-        <img src="/book-3.e3b3793f.svg" alt="" class="book_img">
-        <div class="boox_about">
-          <h6 class="book_headig">Το εγχειρίδιο του καφέ</h6>
-          <div class="book_buy">
-            <p class="book_price">17,99€</p>
-            <a href=""><button class="btn">Add to Cart</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5 -->
-    <div class="book_card">
-      <img src="/book-card-4.83c7b8f9.svg" alt="" class="b_c_bg_img">
-      <div class="card_main_contant_5">
-        <h4 class="book_headig_5">Συνόδεψε τον αγαπημένο σου καφέ με ένα βιβλίο!</h4>
-        <p class="book_price_5">Aνακάλυψε όλες τις νέες κυκλοφορίες!</p>
-        <a href=""><button class="btn">Βρες τα όλα εδώ</button></a>
+        <a href=""><button class="btn">Δες όλα τα προϊόντα</button></a>
+        <!-- <img class="c_machine_img" src="./images/taskPage/c_machine_img_1.svg" alt="play" /> -->
       </div>
     </div>
   </div>
 </section>
 
-      <div class="task_faq_main">
+
+      <!-- <include src="sections/taskpage/profit.html"></include>
+      <include src="sections/taskpage/smartphone.html"></include>
+
+      <include src="sections/taskpage/loveEarth.html"></include>
+
+      <include src="sections/taskpage/spotifyMusic.html"></include>
+      <include src="sections/taskpage/coffeeIsGood.html"></include>
+      <include src="sections/taskpage/publicNow.html"></include> -->
+      <div class="trivia_faq_main">
   <section class="section section--qna">
-    <!-- <h2 class="section__title">Συχνές Ερωτήσεις</h2> -->
+    <h2 class="section__title">Μερικά ακόμα trivia για την</h2>
+    <div class="heading_img">
+      <img src="/faq-heading-img.e638f5ab.svg" alt="" class="faq_h_img">
+    </div>
     <div class="section__content">
       <details class="qna">
         <summary class="qna__header">
-          <div class="qna__title">1. Γιατί να επιλέξω SafetyNet;</div>
+          <div class="qna__title">Τι ειναι η παγκοσμια ημερα καφε;</div>
         </summary>
         <div class="qna__content">
-          Με το SafetyNet θωρακίζεις τη νέα σου συσκευή με προστασία για 1 χρόνο από σπάσιμο οθόνης
-          & βλάβη από υγρό ή και με επέκταση εγγύησης έως και 5 χρόνια. Επίσης έχεις δωρεάν παραλαβή
-          και επιστροφή στο χώρο σου πανελλαδικά, ενώ για βλάβες που αφορούν τα μηχανικά και
-          ηλεκτρονικά (hardware) μέρη της συσκευής σου, εξασφαλίζεται από εμάς η άρτια επισκευή και
-          λειτουργία της!
+          Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Α να
+          κάλυψε Χρήσιμα Tips & γίνε home Barista!
         </div>
       </details>
       <details class="qna">
         <summary class="qna__header">
-          <div class="qna__title">2. Για ποιες συσκευές ισχύει η υπηρεσία;</div>
+          <div class="qna__title">Τι ειναι η παγκοσμια ημερα καφε;</div>
         </summary>
         <div class="qna__content">
           <p>
-            Η υπηρεσία SafetyNet ισχύει για Smartphone, TV, Notebook, Tablet, Desktop PC, Monitor,
-            Digital Camera, Gaming Accessories, Printer, Λευκές οικιακές συσκευές, Οικιακές
-            μικροσυσκευές.
+            Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Α
+            να κάλυψε Χρήσιμα Tips & γίνε home Barista!
           </p>
         </div>
       </details>
       <details class="qna">
         <summary class="qna__header">
-          <div class="qna__title">Ποια είναι τα οφέλη του προγράμματος;</div>
+          <div class="qna__title">Τι ειναι η παγκοσμια ημερα καφε;</div>
         </summary>
         <div class="qna__content">
           <p>
-            Συμμετέχοντας στο πρόγραμμα μπορείς να αντικαταστήσεις
-            <strong>έως και 3 παλιές και ενεργοβόρες συσκευές</strong> σου και να αποχτήσεις νέες,
-            φιλικές προς το περιβάλλον συσκευές, με <strong>επιδότηση από 30% έως 50%</strong>. Έτσι
-            θα εξοικονομείς ενέργεια και θα έχεις μείωση στην κατανάλωση ρεύματος και άρα
-            εξοικονόμηση χρημάτων!
+            Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Α
+            να κάλυψε Χρήσιμα Tips & γίνε home Barista!
           </p>
         </div>
       </details>
       <details class="qna">
         <summary class="qna__header">
-          <div class="qna__title">3. Πόσες φορές μπορώ να επισκευάσω τη συσκευή μου;</div>
+          <div class="qna__title">Τι ειναι η παγκοσμια ημερα καφε;</div>
         </summary>
         <div class="qna__content">
           <p>
-            Η υπηρεσία παρέχει απεριόριστες και δωρεάν επισκέψεις για την επισκευή βλάβης που αφορά
-            τα ηλεκτρονικά και μηχανικά μέρη των συσκευών σου. Η προστασία από σπάσιμο οθόνης &
-            βλάβης από πτώση υγρού, καλύπτει μία (1) επισκευή εντός του 1ου έτους από την ημερομηνία
-            αγοράς.
-          </p>
-        </div>
-      </details>
-      <details class="qna">
-        <summary class="qna__header">
-          <div class="qna__title">4. Τι γίνεται αφού χαλάσει η συσκευή μου;</div>
-        </summary>
-        <div class="qna__content">
-          <p>
-            Παραλαμβάνουμε τη συσκευή σε ένα από τα καταστήματά μας ή επικοινωνείς με το τηλεφωνικό
-            μας κέντρο για δωρεάν παραλαβή της συσκευής μέσω courier ή προγραμματισμό επισκευής στο
-            χώρο σου. Από τη στιγμή που θα παραλάβουμε τη συσκευή για επισκευή, σου παρέχουμε
-            συσκευή αντικατάστασης είτε μέσω courier είτε σε ένα φυσικό κατάστημα μας και η ομάδα
-            των έμπειρων τεχνικών μας μεταφέρει τα απαραίτητα αρχεία σου και το λογισμικό στη
-            συσκευή αυτή, ενώ διασφαλίζει τη διασύνδεση της και με άλλες συσκευές.
+            Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Α
+            να κάλυψε Χρήσιμα Tips & γίνε home Barista!
           </p>
         </div>
       </details>

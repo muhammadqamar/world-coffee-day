@@ -4,11 +4,14 @@
   text-align: center;
   padding: 82px 20px 0;
 
-  .book_heading_img {
-    width: auto;
-    margin-bottom: 47px;
+  .heading_img {
+    max-width: 641px;
+    margin: 0 auto 47px;
     position: relative;
-
+    .book_heading_img {
+      width: auto;
+      height: auto;
+    }
     &:before {
       content: " ";
       position: absolute;

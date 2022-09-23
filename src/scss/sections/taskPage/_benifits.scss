@@ -2,15 +2,13 @@
   max-width: 1446px;
   margin: 0 auto;
   padding: 0 23px;
+  overflow: hidden;
 
   .c_m_main_heading {
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 74px;
-    text-align: center;
-    letter-spacing: -0.01em;
-    color: var(--text-color);
-    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    margin: 0 auto 10px;
+    display: flex;
   }
 
   .c_m_sub_heading {
@@ -24,6 +22,11 @@
     position: relative;
     margin: 0 auto 66px;
 
+    @media (max-width: 768px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
     &:before {
       content: " ";
       position: absolute;
@@ -33,6 +36,9 @@
       height: 4px;
       z-index: -1;
       background: linear-gradient(90deg, rgba(241, 90, 39, 1) 38%, rgba(9, 9, 121, 0) 38%);
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
     &:after {
       content: " ";
@@ -43,6 +49,9 @@
       height: 4px;
       z-index: -1;
       background: linear-gradient(90deg, #09097900 62%, #f15a27 38%);
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .card_heading_two {
@@ -51,6 +60,25 @@
     line-height: 74px;
     text-align: center;
     margin: 56px 0 41px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      line-height: 40px;
+      margin: 55px 0 35px;
+    }
+  }
+
+  .c_m_flex__box.second_section {
+    &:nth-child(1) {
+      .card_bg_img {
+        background-image: url("../images/taskPage/c_machine_img_2.svg") !important;
+      }
+    }
+    &:nth-child(2) {
+      .card_bg_img {
+        background-image: url("../images/taskPage/c_machine_img_1.svg") !important;
+      }
+    }
   }
 
   .c_m_flex__box {
@@ -58,48 +86,98 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
+    justify-content: center;
 
     .card_box {
       width: 694px;
       min-height: 465px;
       background: #e3ebf0;
       border-radius: 16px;
-      padding: 42px 45px 55px;
+
       position: relative;
 
-      .c_machine_img {
-        position: absolute;
-        top: 0;
-        left: 0;
+      @media (min-width: 1099px) and (max-width: 1150px) {
+        width: 520px;
       }
 
-      a {
-        button {
+      @media (min-width: 1150px) and (max-width: 1440px) {
+        width: 550px;
+      }
+
+      &:nth-child(2) {
+        .card_bg_img {
+          background-image: url("../images/taskPage/c_machine_img_7.svg");
+        }
+      }
+      &:nth-child(3) {
+        .card_bg_img {
+          background-image: url("../images/taskPage/c_machine_img_6.svg");
+        }
+      }
+      &:nth-child(4) {
+        .card_bg_img {
+          background-image: url("../images/taskPage/c_machine_img_5.svg");
+        }
+      }
+      &:nth-child(5) {
+        .card_bg_img {
+          background-image: url("../images/taskPage/c_machine_img_4.svg");
+        }
+      }
+      &:nth-child(6) {
+        .card_bg_img {
+          background-image: url("../images/taskPage/c_machine_img_3.svg");
+        }
+      }
+
+      .card_bg_img {
+        width: 100%;
+        min-height: 465px;
+        background-image: url("../images/taskPage/c_machine_img_8.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 42px 45px 55px;
+
+        .c_machine_img {
           position: absolute;
-          bottom: 55px;
-          left: 45px;
-          background: var(--white);
+          top: 0;
+          left: 0;
+          object-fit: cover;
+        }
+
+        a {
+          button {
+            position: absolute;
+            bottom: 55px;
+            left: 45px;
+            background: var(--white);
+            z-index: 1;
+          }
+        }
+
+        .card_about {
+          width: 315px;
+          position: relative;
           z-index: 1;
-        }
-      }
 
-      .card_about {
-        width: 315px;
-        position: relative;
-        z-index: 1;
+          @media (min-width: 992px) and (max-width: 1099px) {
+            width: 225px;
+          }
 
-        .box_title {
-          font-weight: 700;
-          font-size: 32px;
-          line-height: 42px;
-          color: var(--black);
-          margin: 0 0 18px;
-        }
-        .box_about {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 28px;
-          color: var(--black);
+          .box_title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
+            color: var(--black);
+            margin: 0 0 18px;
+          }
+          .box_about {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: var(--black);
+          }
         }
       }
     }

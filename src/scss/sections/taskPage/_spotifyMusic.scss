@@ -1,0 +1,48 @@
+.spotify_music_section {
+  max-width: 1446px;
+  height: 422px;
+  margin: 13px auto 19px;
+  padding: 0 20px;
+
+  .spotify_bg_color {
+    width: 100%;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 13.6216px;
+    .spotify_bg_img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+    }
+
+    .spotify_music_section {
+      position: relative;
+      width: 100%;
+      .spotify_about {
+        width: 482px;
+        margin: 0 178px 0 auto;
+        padding-top: 68px;
+        .spotify-img {
+          width: auto;
+          margin-bottom: 24.28px;
+        }
+
+        .spotify_text {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 0.01em;
+          color: var(--black);
+          margin-bottom: 39.34px;
+        }
+        a {
+          button {
+            background-color: #9edbcb;
+          }
+        }
+      }
+    }
+  }
+}

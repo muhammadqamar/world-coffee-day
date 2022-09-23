@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 24px 23px 0;
 
+  @media (min-width: 992px) and (max-width: 1440px) {
+    padding: 24px 16px 0;
+  }
+
   .page_name_heading {
     font-weight: 600;
     font-size: 14px;
@@ -32,6 +36,11 @@
       border-bottom-left-radius: 40px;
       border-bottom-right-radius: 40px;
       background: radial-gradient(123.79% 117.88% at 36.86% 133.53%, #fae9dd 0%, #f15a27 100%);
+      object-fit: cover;
+
+      @media (max-width: 992px) {
+        height: 577px;
+      }
     }
     // }
 
@@ -40,6 +49,22 @@
       display: flex;
       margin: 0 auto 20px;
       padding-top: 47px;
+      display: block;
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+    .hero_heading_img_mob {
+      display: none;
+
+      @media (max-width: 992px) {
+        width: auto;
+        display: flex;
+        padding: 47px 30px 0;
+        margin: 0 auto;
+        display: block;
+      }
     }
 
     .hero_main_geading {
@@ -50,6 +75,13 @@
       text-align: center;
       color: var(--white);
       margin: 0 auto 25px;
+
+      @media (max-width: 992px) {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0 22px;
+        margin: 0 auto 18px;
+      }
     }
 
     .hero_main_text {
@@ -61,6 +93,14 @@
       letter-spacing: 0.02em;
       color: var(--white);
       margin: 0 auto 92px;
+
+      @media (max-width: 992px) {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 22px;
+
+        margin: 0 auto 17px;
+      }
     }
 
     .hero_coffee_flex_section {
@@ -69,6 +109,48 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 42px;
+      justify-content: flex-start;
+
+      @media (max-width: 992px) {
+        gap: 16px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1440px) {
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+
+      @media (max-width: 992px) {
+        padding: 0 16px;
+      }
+
+      // card
+
+      .h_c_card_3 {
+        width: 623px;
+        height: 456px;
+        background-image: url("../images/taskPage/hero-card-3-img.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media (min-width: 992px) and (max-width: 1352px) {
+          width: 455px;
+        }
+        // @media (min-width: 992px) and (max-width: 1352px) {
+        //   width: 455px;
+        // }
+
+        @media (min-width: 500px) and (max-width: 992px) {
+          height: 400px;
+          width: 100%;
+          overflow: initial;
+        }
+        @media (max-width: 500px) {
+          height: 226px;
+          width: 100%;
+          overflow: initial;
+        }
+      }
 
       .h_c_card {
         width: 623px;
@@ -79,9 +161,103 @@
         overflow: hidden;
         box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.08);
 
+        @media (min-width: 992px) and (max-width: 1352px) {
+          width: 455px;
+        }
+
+        @media (min-width: 500px) and (max-width: 992px) {
+          min-height: 400px;
+        }
+        @media (max-width: 500px) {
+          min-height: 226px;
+        }
+
+        @media (max-width: 992px) {
+          width: 100%;
+          overflow: initial;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
         &:last-child {
           width: 100%;
           min-height: 291px;
+          @media (max-width: 992px) {
+            min-height: 552px;
+            overflow: initial;
+            margin-top: 12px;
+          }
+
+          .h_card_bg_img_5 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;
+            @media (max-width: 992px) {
+              display: none;
+            }
+          }
+
+          .h_card_bg_img_mob {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: none;
+            @media (max-width: 992px) {
+              display: block;
+            }
+          }
+
+          .about {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            @media (max-width: 992px) {
+              align-items: flex-start;
+              flex-direction: column;
+            }
+          }
+        }
+        &:nth-child(2) {
+          position: relative;
+          @media (max-width: 600px) {
+            min-height: 200px;
+          }
+
+          .h_card_about_text_mob {
+            display: none;
+            @media (max-width: 600px) {
+              font-weight: 400;
+              font-size: 10px;
+              line-height: 17px;
+              opacity: 0.8;
+              color: var(--black);
+              display: block;
+              padding: 0 19px 17px;
+              margin-top: -45px;
+            }
+          }
+          .h_card_bg_img_2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: block;
+            right: -11px;
+            @media (max-width: 600px) {
+              display: none;
+            }
+          }
+
+          .h_card_bg_img_mob {
+            display: none;
+            @media (max-width: 600px) {
+              display: block;
+              width: 100%;
+              height: auto;
+              margin-top: -30px;
+            }
+          }
         }
 
         .h_card_bg_img {
@@ -89,15 +265,32 @@
           bottom: 0;
           right: 0;
         }
-        &:nth-child(2) {
-          .h_card_bg_img {
-            right: -11px;
+
+        .h_card_bg_img_4 {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          display: block;
+          right: -11px;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+
+        .h_card_bg_img_4_mob {
+          display: none;
+          @media (max-width: 768px) {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin-top: 0;
           }
         }
 
         .about {
           display: flex;
           align-items: center;
+          justify-content: space-between;
 
           .h_card_heading {
             font-weight: 800;
@@ -106,12 +299,25 @@
             color: var(--black);
             margin: 0;
             padding: 33px 0 0 40px;
+
+            @media (max-width: 992px) {
+              font-size: 20px;
+              line-height: 24px;
+              padding: 19px 0 0 16px;
+            }
           }
 
           .off_price {
             width: 185px;
             height: 185px;
             padding: 14px 14px 0 0;
+
+            @media (max-width: 992px) {
+              width: 106px;
+              height: 105.78px;
+              padding: 0 23px 0 0;
+              margin-top: -14px;
+            }
           }
 
           .h_card_about_text {
@@ -120,15 +326,33 @@
             line-height: 38px;
             color: var(--black);
             padding: 38px 75px 0 48px;
+
+            @media (max-width: 1352px) {
+              padding: 15px 37px 0 17px;
+            }
+            @media (max-width: 992px) {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
 
           .off_price_2 {
             width: 214px;
             height: 214px;
             margin: 38.5px 23px 38.5px 19px;
+            @media (max-width: 992px) {
+              width: 148px;
+              height: 148px;
+              margin: -12px 0 0 -14px;
+            }
           }
           .card_5_about {
             width: 495px;
+
+            @media (max-width: 992px) {
+              width: 100%;
+              padding: 16px 18px 0;
+            }
 
             .h_card_about_text_5 {
               font-weight: 400;
@@ -136,6 +360,11 @@
               line-height: 38px;
               color: var(--black);
               margin-bottom: 15px;
+
+              @media (max-width: 992px) {
+                font-size: 32px;
+                line-height: 40px;
+              }
             }
             .h_card_heading_5 {
               font-weight: 800;
@@ -143,6 +372,10 @@
               line-height: 48px;
               color: var(--black);
               margin: 0;
+              @media (max-width: 992px) {
+                font-size: 18px;
+                line-height: 38px;
+              }
             }
           }
         }

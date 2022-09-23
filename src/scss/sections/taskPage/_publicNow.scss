@@ -1,0 +1,15 @@
+.public_now_section {
+  max-width: 1446px;
+  margin: 0 auto 66px;
+  padding: 0 20px;
+
+  .flex_box_imgs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    border-radius: 13.6216px;
+    background: var(--white);
+    padding: 24px;
+  }
+}
