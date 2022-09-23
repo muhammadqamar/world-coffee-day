@@ -1008,20 +1008,32 @@ svg, img {
   }
 }
 
-.coffee__machine__section .c_m_flex__box.second_section:nth-child(1) .card_bg_img {
-  background-image: url("c_machine_img_2.23de771c.svg") !important;
-}
-
-.coffee__machine__section .c_m_flex__box.second_section:nth-child(2) .card_bg_img {
-  background-image: url("c_machine_img_1.da903767.svg") !important;
-}
-
 .coffee__machine__section .c_m_flex__box {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 12px;
   display: flex;
+}
+
+.coffee__machine__section .c_m_flex__box .one_c .card_bg_img {
+  background-image: url("c_machine_img_2.23de771c.svg") !important;
+}
+
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .one_c .card_bg_img {
+    background-image: url("c_machine_img_mob_2.577ae04f.svg") !important;
+  }
+}
+
+.coffee__machine__section .c_m_flex__box .two_c .card_bg_img {
+  background-image: url("c_machine_img_1.da903767.svg") !important;
+}
+
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .two_c .card_bg_img {
+    background-image: url("c_machine_img_mob_1.0686a9db.svg") !important;
+  }
 }
 
 .coffee__machine__section .c_m_flex__box .card_box {
@@ -1032,13 +1044,19 @@ svg, img {
   position: relative;
 }
 
-@media (min-width: 1099px) and (max-width: 1150px) {
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1099px) and (max-width: 1158px) {
   .coffee__machine__section .c_m_flex__box .card_box {
     width: 520px;
   }
 }
 
-@media (min-width: 1150px) and (max-width: 1440px) {
+@media (min-width: 1158px) and (max-width: 1440px) {
   .coffee__machine__section .c_m_flex__box .card_box {
     width: 550px;
   }
@@ -1048,20 +1066,50 @@ svg, img {
   background-image: url("c_machine_img_7.9e7e15c5.svg");
 }
 
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box:nth-child(2) .card_bg_img {
+    background-image: url("c_machine_img_mob_7.56e7339f.svg");
+  }
+}
+
 .coffee__machine__section .c_m_flex__box .card_box:nth-child(3) .card_bg_img {
   background-image: url("c_machine_img_6.5709a543.svg");
+}
+
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box:nth-child(3) .card_bg_img {
+    background-image: url("c_machine_img_mob_6.c6280c39.svg");
+  }
 }
 
 .coffee__machine__section .c_m_flex__box .card_box:nth-child(4) .card_bg_img {
   background-image: url("c_machine_img_5.150ef1d6.svg");
 }
 
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box:nth-child(4) .card_bg_img {
+    background-image: url("c_machine_img_mob_5.7ae4ad73.svg");
+  }
+}
+
 .coffee__machine__section .c_m_flex__box .card_box:nth-child(5) .card_bg_img {
   background-image: url("c_machine_img_4.4e4b2140.svg");
 }
 
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box:nth-child(5) .card_bg_img {
+    background-image: url("c_machine_img_mob_4.fdae68c7.svg");
+  }
+}
+
 .coffee__machine__section .c_m_flex__box .card_box:nth-child(6) .card_bg_img {
   background-image: url("c_machine_img_3.e5a5e82d.svg");
+}
+
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box:nth-child(6) .card_bg_img {
+    background-image: url("c_machine_img_mob_3.30081245.svg");
+  }
 }
 
 .coffee__machine__section .c_m_flex__box .card_box .card_bg_img {
@@ -1071,7 +1119,22 @@ svg, img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 42px 45px 55px;
+  border-radius: 16px;
+  padding: 42px 334px 55px 45px;
+}
+
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box .card_bg_img {
+    background-position: unset;
+    background-image: url("c_machine_img_mob_8.8d4e87b4.svg");
+    padding: 245px 18px 18px;
+  }
+}
+
+@media (min-width: 1099px) and (max-width: 1440px) {
+  .coffee__machine__section .c_m_flex__box .card_box .card_bg_img {
+    padding: 42px 240px 55px 45px;
+  }
 }
 
 .coffee__machine__section .c_m_flex__box .card_box .card_bg_img .c_machine_img {
@@ -1089,15 +1152,19 @@ svg, img {
   left: 45px;
 }
 
-.coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about {
-  width: 315px;
-  z-index: 1;
-  position: relative;
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box .card_bg_img a button {
+    position: inherit;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1099px) {
+.coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about {
+  margin-bottom: 125px;
+}
+
+@media (max-width: 768px) {
   .coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about {
-    width: 225px;
+    margin-bottom: 12px;
   }
 }
 
@@ -1109,11 +1176,28 @@ svg, img {
   line-height: 42px;
 }
 
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about .box_title {
+    margin: 0 0 9px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about .box_about {
   color: var(--black);
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+}
+
+@media (max-width: 768px) {
+  .coffee__machine__section .c_m_flex__box .card_box .card_bg_img .card_about .box_about {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+  }
 }
 
 .features__section {
@@ -2087,9 +2171,9 @@ a {
   <!--  -->
   <h1 class="card_heading_two">Ολοκλήρωσε το coffee bar σου με</h1>
   <!--  -->
-  <div class="c_m_flex__box second_section">
+  <div class="c_m_flex__box">
     <!-- card  1 -->
-    <div class="card_box">
+    <div class="card_box one_c">
       <div class="card_bg_img">
         <div class="card_about">
           <h5 class="box_title">Αξεσουάρ καφέ</h5>
@@ -2103,7 +2187,7 @@ a {
       </div>
     </div>
     <!-- card  2 -->
-    <div class="card_box">
+    <div class="card_box two_c">
       <div class="card_bg_img">
         <div class="card_about">
           <h5 class="box_title">Κούπες Καφέ</h5>
@@ -2128,57 +2212,109 @@ a {
       <include src="sections/taskpage/spotifyMusic.html"></include>
       <include src="sections/taskpage/coffeeIsGood.html"></include>
       <include src="sections/taskpage/publicNow.html"></include> -->
-      <div class="trivia_faq_main">
-  <section class="section section--qna">
-    <h2 class="section__title">Μερικά ακόμα trivia για την</h2>
-    <div class="heading_img">
-      <img src="/faq-heading-img.e638f5ab.svg" alt="" class="faq_h_img">
-    </div>
-    <div class="section__content">
-      <details class="qna">
-        <summary class="qna__header">
-          <div class="qna__title">Τι ειναι η παγκοσμια ημερα καφε;</div>
-        </summary>
-        <div class="qna__content">
-          Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Α να
-          κάλυψε Χρήσιμα Tips & γίνε home Barista!
-        </div>
-      </details>
-      <details class="qna">
-        <summary class="qna__header">
-          <div class="qna__title">Τι ειναι η παγκοσμια ημερα καφε;</div>
-        </summary>
-        <div class="qna__content">
-          <p>
-            Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Α
-            να κάλυψε Χρήσιμα Tips & γίνε home Barista!
-          </p>
-        </div>
-      </details>
-      <details class="qna">
-        <summary class="qna__header">
-          <div class="qna__title">Τι ειναι η παγκοσμια ημερα καφε;</div>
-        </summary>
-        <div class="qna__content">
-          <p>
-            Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Α
-            να κάλυψε Χρήσιμα Tips & γίνε home Barista!
-          </p>
-        </div>
-      </details>
-      <details class="qna">
-        <summary class="qna__header">
-          <div class="qna__title">Τι ειναι η παγκοσμια ημερα καφε;</div>
-        </summary>
-        <div class="qna__content">
-          <p>
-            Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Ανακάλυψε Χρήσιμα Tips & γίνε home Barista!Α
-            να κάλυψε Χρήσιμα Tips & γίνε home Barista!
-          </p>
-        </div>
-      </details>
-    </div>
-  </section>
+      <div>
+  <div class="trivia_faq_main">
+    <section class="section section--qna">
+      <h2 class="section__title">Μερικά ακόμα trivia για την</h2>
+      <div class="heading_img">
+        <img src="/faq-heading-img.e638f5ab.svg" alt="" class="faq_h_img">
+      </div>
+      <div class="section__content">
+        <details class="qna">
+          <summary class="qna__header">
+            <div class="qna__title"><strong>Πότε ξεκίνησε η Παγκόσμια Ημέρα Καφέ;</strong></div>
+          </summary>
+          <div class="qna__content">
+            Η 1η Οκτωβρίου έχει καθιερωθεί ως η Παγκόσμια Ημέρα Καφέ από τον Διεθνή Οργανισμό Καφέ
+            (International Coffee Organization). Ξεκίνησε (προφανώς!) από την Ιταλία και γιορτάστηκε
+            για πρώτη φορά στην Expo 2015 του Μιλάνου.
+          </div>
+        </details>
+        <details class="qna">
+          <summary class="qna__header">
+            <div class="qna__title"><strong>Τι καφέ πίνουμε στην Ελλάδα;</strong></div>
+          </summary>
+          <div class="qna__content">
+            <p>
+              Ζούμε σε μία από τις χώρες που ο freddo espresso και ο freddo cappuccino παίζουν στα
+              ποτήρια μας όλο το χρόνο, αλλά δεν είναι και λίγες οι φορές που η κληρονομιά του φραπέ
+              χτυπάει ακόμη στα shaker μας τα καλοκαίρια! Παράλληλα όμως δύσκολα θα βρεθεί γραφείο ή
+              εργασιακός χώρος χωρίς μια καφετιέρα φίλτρου, άρα και ο καφές φίλτρου δε μπορεί παρά
+              να αναγνωριστεί ως μία από τις συνήθεις επιλογές μας!
+            </p>
+          </div>
+        </details>
+        <details class="qna">
+          <summary class="qna__header">
+            <div class="qna__title"><strong>Ποιος είναι ο πιο υγιεινός καφές;</strong></div>
+          </summary>
+          <div class="qna__content">
+            <p>
+              Ο ελληνικός καφές θεωρείται από τους πιο υγιεινούς, κυρίως γιατί περιέχει στοιχεία με
+              αντιφλεγμονώδη δράση. Δεύτερος έρχεται ο γαλλικός καφές, που χάρη στο φίλτρο
+              απομακρύνονται οι βλαβερές ουσίες και στο απόσταγμα περνάνε μόνο οι αντιοξειδωτικές
+              ουσίες. Ο freddo espresso και ο freddo cappuccino από την άλλη προσφέρουν τόνωση, αλλά
+              θέλουν μέτρο και μικρές δόσεις! Την τελευταία θέση φυσικά κατέχει ο φραπέ, ο οποίος
+              είναι μεν διεγερτικός, αλλά αρκετά βαρύς για το στομάχι.
+            </p>
+          </div>
+        </details>
+        <details class="qna">
+          <summary class="qna__header">
+            <div class="qna__title"><strong>Είναι τα Public coffee addicts;</strong></div>
+          </summary>
+          <div class="qna__content">
+            <p>
+              Στα Public ξυπνάμε με, και για, τον καφέ! Μας αρέσει και αναγνωρίζουμε πόσο σημαντική
+              θέση μπορεί να έχει στην καθημερινότητά σου, για αυτό φέρνουμε κοντά σου ό,τι μπορεί
+              να χρειαστείς για να τον απολαμβάνεις όπως σου αρέσει! Αυτόματες μηχανές καφέ,
+              χειροκίνητες μηχανές καφέ, μηχανές καφέ με κάψουλα, καφετιέρες φίλτρου, μηχανές για
+              φραπέ, συσκευές ελληνικού καφέ, συσκευές για αφρόγαλα, μύλους καφέ, κόκκους καφέ,
+              κούπες, ποτήρια - έχουμε τα πάντα!
+            </p>
+          </div>
+        </details>
+        <details class="qna">
+          <summary class="qna__header">
+            <div class="qna__title">
+              <strong>Μπορείς να αγοράσεις τη νέα σου μηχανή καφέ και άλλα αξεσουάρ από τα Public με
+                δόσεις;</strong>
+            </div>
+          </summary>
+          <div class="qna__content">
+            <p>
+              Μπορείς να αποκτήσεις τη νέα σου καφετιέρα και τα αγαπημένα σου αξεσουάρ καφέ με δύο
+              ευέλικτους τρόπους, ανάλογα με τις ανάγκες σου! Μπορείς να πληρώσεις τις αγορές σου με
+              την υπηρεσία <strong>Public Now, Pay Later,</strong> για εξόφληση σε 3 άτοκες δόσεις
+              και χωρίς πιστωτική, ή με την υπηρεσία <strong> Flex Pay</strong>,για να επιλέξεις εσύ
+              το χρόνο και το ποσό κάθε δόσης και να εξοφλήσεις σε έως 36 δόσεις, χωρίς πιστωτική!
+            </p>
+          </div>
+        </details>
+        <details class="qna">
+          <summary class="qna__header">
+            <div class="qna__title">
+              <strong>Τι νέες ιδέες παίζουν για το home coffee bar σου;</strong>
+            </div>
+          </summary>
+          <div class="qna__content">
+            <p>
+              Δύο είναι οι σωστές «επόμενες κινήσεις» για να ξέρεις! Κάνεις bookmark στο browser σου
+              το Public Blog για να τσεκάρεις όλα τα νέα και τις προτάσεις των Public Experts για το
+              home coffee bar σου, και κάνεις και εγγραφή και στο newsletter μας για να λαμβάνεις
+              στο mail σου νέες κυκλοφορίες και μοναδικές προσφορές στα αγαπημένα σου προϊόντα καφέ!
+            </p>
+            <ul>
+              <li>Κι όταν θες μια κούπα καφέ, είμαστε εκεί!</li>
+              <li>Στις πιο απολαυστικές κούπες καφέ, είμαστε εκεί!</li>
+              <li>Όποτε θες μια απολαυστική κούπα καφέ,είμαστε εκεί!</li>
+              <li>Είμαστε εκεί, σε κάθε κούπα που απολαμβάνεις!</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+  </div>
 </div>
 
     </div>

@@ -68,19 +68,6 @@
     }
   }
 
-  .c_m_flex__box.second_section {
-    &:nth-child(1) {
-      .card_bg_img {
-        background-image: url("../images/taskPage/c_machine_img_2.svg") !important;
-      }
-    }
-    &:nth-child(2) {
-      .card_bg_img {
-        background-image: url("../images/taskPage/c_machine_img_1.svg") !important;
-      }
-    }
-  }
-
   .c_m_flex__box {
     display: flex;
     align-items: center;
@@ -88,45 +75,86 @@
     gap: 12px;
     justify-content: center;
 
+    .one_c {
+      .card_bg_img {
+        background-image: url("../images/taskPage/c_machine_img_2.svg") !important;
+
+        @media (max-width: 768px) {
+          background-image: url("../images/taskPage/c_machine_img_mob_2.svg") !important;
+        }
+      }
+    }
+    .two_c {
+      .card_bg_img {
+        background-image: url("../images/taskPage/c_machine_img_1.svg") !important;
+
+        @media (max-width: 768px) {
+          background-image: url("../images/taskPage/c_machine_img_mob_1.svg") !important;
+        }
+      }
+    }
+
     .card_box {
       width: 694px;
       min-height: 465px;
       background: #e3ebf0;
       border-radius: 16px;
-
       position: relative;
 
-      @media (min-width: 1099px) and (max-width: 1150px) {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      @media (min-width: 1099px) and (max-width: 1158px) {
         width: 520px;
       }
 
-      @media (min-width: 1150px) and (max-width: 1440px) {
+      @media (min-width: 1158px) and (max-width: 1440px) {
         width: 550px;
       }
 
       &:nth-child(2) {
         .card_bg_img {
           background-image: url("../images/taskPage/c_machine_img_7.svg");
+
+          @media (max-width: 768px) {
+            background-image: url("../images/taskPage/c_machine_img_mob_7.svg");
+          }
         }
       }
       &:nth-child(3) {
         .card_bg_img {
           background-image: url("../images/taskPage/c_machine_img_6.svg");
+
+          @media (max-width: 768px) {
+            background-image: url("../images/taskPage/c_machine_img_mob_6.svg");
+          }
         }
       }
       &:nth-child(4) {
         .card_bg_img {
           background-image: url("../images/taskPage/c_machine_img_5.svg");
+
+          @media (max-width: 768px) {
+            background-image: url("../images/taskPage/c_machine_img_mob_5.svg");
+          }
         }
       }
       &:nth-child(5) {
         .card_bg_img {
           background-image: url("../images/taskPage/c_machine_img_4.svg");
+
+          @media (max-width: 768px) {
+            background-image: url("../images/taskPage/c_machine_img_mob_4.svg");
+          }
         }
       }
       &:nth-child(6) {
         .card_bg_img {
           background-image: url("../images/taskPage/c_machine_img_3.svg");
+          @media (max-width: 768px) {
+            background-image: url("../images/taskPage/c_machine_img_mob_3.svg");
+          }
         }
       }
 
@@ -137,7 +165,18 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        padding: 42px 45px 55px;
+        border-radius: 16px;
+        padding: 42px 334px 55px 45px;
+
+        @media (max-width: 768px) {
+          background-position: unset;
+          background-image: url("../images/taskPage/c_machine_img_mob_8.svg");
+          padding: 245px 18px 18px;
+        }
+
+        @media (min-width: 1099px) and (max-width: 1440px) {
+          padding: 42px 240px 55px 45px;
+        }
 
         .c_machine_img {
           position: absolute;
@@ -153,16 +192,18 @@
             left: 45px;
             background: var(--white);
             z-index: 1;
+
+            @media (max-width: 768px) {
+              position: inherit;
+            }
           }
         }
 
         .card_about {
-          width: 315px;
-          position: relative;
-          z-index: 1;
+          margin-bottom: 125px;
 
-          @media (min-width: 992px) and (max-width: 1099px) {
-            width: 225px;
+          @media (max-width: 768px) {
+            margin-bottom: 12px;
           }
 
           .box_title {
@@ -171,12 +212,24 @@
             line-height: 42px;
             color: var(--black);
             margin: 0 0 18px;
+
+            @media (max-width: 768px) {
+              font-size: 20px;
+              line-height: 20px;
+              margin: 0 0 9px;
+            }
           }
           .box_about {
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
             color: var(--black);
+            @media (max-width: 768px) {
+              margin-bottom: 12px;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 23px;
+            }
           }
         }
       }
